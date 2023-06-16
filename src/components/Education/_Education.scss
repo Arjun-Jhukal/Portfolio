@@ -1,0 +1,55 @@
+@import "../../assets/scss/styles.scss";
+.education {
+  border-left: 3px solid $teal;
+  padding-left: 30px;
+
+  &__item {
+    box-shadow: $boxShadow_01;
+    padding: 15px;
+    background-color: $Primary;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 3px solid $teal;
+      position: absolute;
+      top: 50%;
+      left: -42px;
+      background: $Primary;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &__header {
+      margin-bottom: 15px;
+
+      h1,
+      p {
+        margin: 0;
+      }
+
+      p {
+        &:first-of-type {
+          color: $red;
+        }
+      }
+    }
+
+    &__brief {
+      padding-top: 15px;
+      border-top: 1px solid #000;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .education {
+    margin-bottom: 50px;
+  }
+}

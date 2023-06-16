@@ -1,0 +1,27 @@
+@mixin transition($delay) {
+  transition: all $delay linear;
+}
+
+@mixin line-clamp($number) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $number;
+}
+
+// Generating Padding & margin  Classes
+$gap: 5;
+
+@for $i from 1 through 10 {
+  .py_#{$gap*$i} {
+    padding: $gap * $i + px;
+  }
+}
+
+@function set-text-color($color) {
+  @if (lightness($color) >40%) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}

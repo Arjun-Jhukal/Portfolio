@@ -1,0 +1,38 @@
+@import "../../assets/scss/_variables.scss";
+.footer {
+  background-color: #000;
+  color: $white;
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+
+    li {
+      a {
+        border: 1px solid $red;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: $white;
+
+        &:hover {
+          background-color: $red;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    p {
+      span {
+        color: $red;
+        font-weight: 400;
+      }
+    }
+  }
+}

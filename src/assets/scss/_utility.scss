@@ -1,0 +1,102 @@
+@import "./variables";
+.lg_heading {
+  font-size: $lg_font;
+  text-transform: uppercase;
+  font-weight: 700;
+  span {
+    color: $red;
+  }
+}
+.md_heading,
+.sm_heading,
+.lg_heading {
+  font-family: 600;
+  color: $white;
+}
+.md_heading {
+  font-size: $md_font;
+}
+.sm_heading {
+  font-size: $sm_font;
+}
+
+.md_heading,
+.sm_heading {
+  text-transform: uppercase;
+}
+.sub_heading {
+  text-transform: uppercase;
+  color: $red !important;
+  font-weight: 600;
+  line-height: 1.8;
+  color: $white;
+  font-size: 16px;
+}
+
+.section_gap {
+  padding: 80px 0;
+}
+.pb-80 {
+  padding-bottom: 80px;
+}
+.pt-80 {
+  padding-bottom: 80px;
+}
+
+.section_title {
+  h1 {
+    &:not(.sm_heading) {
+      text-transform: capitalize;
+      font-weight: 400;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: $white !important;
+  @include transition(0.3s);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 0;
+    right: -20px;
+    bottom: 0;
+    z-index: -1;
+    transform: skew(-16deg);
+    @include transition(0.6s);
+  }
+
+  &__hire {
+    background-color: $red;
+    &:hover {
+      color: $Primary !important;
+      &::before {
+        background: $light_gray;
+        width: 120%;
+      }
+    }
+  }
+  &__request {
+    border: 1px solid $red;
+
+    &:hover {
+      &::before {
+        background-color: red;
+        width: 120%;
+      }
+    }
+  }
+}

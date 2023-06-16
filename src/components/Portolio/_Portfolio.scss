@@ -1,0 +1,48 @@
+@import "../../assets/scss/styles.scss";
+.portfolio {
+  position: relative;
+  z-index: 1;
+  &__item {
+    padding: 15px;
+    box-shadow: $boxShadow_01;
+    background: linear-gradient(-30deg, #000 10%, transparent);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+
+    &__image {
+      height: 200px;
+
+      img {
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &__text {
+      padding-top: 15px;
+
+      h1 {
+        color: $red;
+      }
+      p {
+        @include line-clamp(3);
+      }
+    }
+  }
+  &__status {
+    font-family: $fontFamily_02;
+    background-color: $red;
+    color: $white;
+    padding: 10px;
+    font-weight: 300;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 20px 0 20px 0;
+  }
+}
