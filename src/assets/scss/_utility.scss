@@ -116,6 +116,21 @@
       box-shadow: 6px 6px 0 #1b2129;
     }
   }
+
+  &__github {
+    background-color: #000;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+
+    &:hover {
+      color: $red !important;
+      box-shadow: 6px 6px 0 $red;
+      background-color: #000;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -134,5 +149,42 @@
   }
   .btn {
     font-size: 12px;
+  }
+}
+
+// SCroll snap type
+// main {
+//   &.main {
+//     height: 100vh;
+//     overflow-y: scroll;
+//     scroll-snap-type: y proximity;
+//   }
+
+//   section {
+//     scroll-snap-align: start;
+//   }
+// }
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  span {
+    font-size: 40px;
+    color: $white;
+    text-transform: uppercase;
+    display: block;
+  }
+  h1 {
+    font-size: 120px;
+    color: $red;
+
+    span {
+      font-size: 14px;
+      text-align: center;
+    }
   }
 }

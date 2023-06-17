@@ -25,7 +25,7 @@ import testimonial_04 from "./assets/img/testimonial/04.jpg";
 import testimonial_05 from "./assets/img/testimonial/05.jpg";
 import testimonial_06 from "./assets/img/testimonial/06.jpg";
 
-export const NavbarItems = ["Home", "Portfolio", "Skills", "Education", "Experience", "Review"];
+export const NavbarItems = ["Home", "Portfolio", "Skills", "Education", "Experience", "Blog", "Review"];
 
 export const skillItems = [
   {
@@ -142,7 +142,7 @@ export const BlogItems = [
 export const PortfolioItems = [
   {
     id: 1,
-    title: "Tour and Travel Management Site",
+    title: "Tour and Travel Agency",
     status: "cloned",
     image: portfolio_01,
     tools: ["HTML", "CSS", "Javascript", "Bootstrap", "Slick", "SCSS"],

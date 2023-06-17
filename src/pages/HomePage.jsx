@@ -12,22 +12,24 @@ const HomePage = () => {
   return (
     <Auxilary>
       <Navbar />
-      <Banner />
-      <Portfolio />
-      <Skill />
-      <div className="container section_gap">
-        <div className="row">
-          <div className="col-lg-6 col-12">
-            <Education />
-          </div>
-          <div className="col-lg-6 col-12">
-            <Experience />
+      <main className="main">
+        <Banner />
+        <Portfolio />
+        <Skill />
+        <div className="container section_gap">
+          <div className="row">
+            <div className="col-lg-6 col-12">
+              <Education />
+            </div>
+            <div className="col-lg-6 col-12">
+              <Experience />
+            </div>
           </div>
         </div>
-      </div>
 
-      <Cta />
-      <Review />
+        <Cta />
+        <Review />
+      </main>
       <Footer />
     </Auxilary>
   );

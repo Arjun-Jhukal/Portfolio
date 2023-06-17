@@ -5,8 +5,9 @@
   background-color: $white;
   &__item {
     padding: 15px;
-    box-shadow: $boxShadow_01;
-    background: linear-gradient(-30deg, #000 10%, transparent);
+    // box-shadow: $boxShadow_01;
+    // background: linear-gradient(-30deg, #000 10%, transparent);
+    background: $Primary;
     border-radius: 5px;
     margin-bottom: 30px;
     position: relative;
@@ -30,6 +31,13 @@
       p {
         @include line-clamp(3);
       }
+    }
+
+    &__btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
     }
   }
   &__status {

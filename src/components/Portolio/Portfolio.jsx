@@ -1,7 +1,8 @@
 import { PortfolioItems } from "../../data";
-// import { GrLinkNext } from "react-icons/gr";
 import Title from "../../commonComponent/Title";
 import "./_Portfolio.scss";
+
+import { AiOutlineArrowRight, AiOutlineGithub, AiOutlineExpand, AiFillCodeSandboxCircle } from "react-icons/ai";
 
 const Portfolio = () => {
   return (
@@ -23,7 +24,7 @@ const Portfolio = () => {
                   </div>
 
                   <div className="portfolio__item__text">
-                    <h1 className="sm_heading">{item.title}</h1>
+                    <h1 className="md_heading">{item.title}</h1>
                     <p>{item.about}</p>
                     <ul>
                       {item.tools.forEach((tool, index) => {
@@ -33,6 +34,21 @@ const Portfolio = () => {
                   </div>
 
                   {item.status ? <div className="portfolio__status">{item.status}</div> : ""}
+
+                  <div className="portfolio__item__btns">
+                    <div className="btn btn__github">
+                      <AiFillCodeSandboxCircle size={20} />
+                      <span>Source Code</span>
+                    </div>
+                    <div className="btn btn__github">
+                      <AiOutlineArrowRight size={20} />
+                      <span>Live Site</span>
+                    </div>
+                    {/* <div className="btn btn__github">
+                      <AiOutlineExpand size={20} />
+                      <span>More</span>
+                    </div> */}
+                  </div>
                 </div>
               </div>
             );

@@ -4,13 +4,12 @@ import HeaderLogo from "../../assets/img/company/png/logo-no-background.png";
 import { NavbarItems } from "../../data";
 
 import { FaBars } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
+// import { AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [showMenu, setShowMenu] = useState({
     show: false,
     showCloseBtn: false,
-    showBurgerBtn: true,
   });
 
   const toggleActive = (value) => {
@@ -18,7 +17,6 @@ const Navbar = () => {
     setShowMenu({
       show: false,
       showCloseBtn: false,
-      showBurgerBtn: true,
     });
   };
 

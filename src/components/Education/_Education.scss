@@ -20,6 +20,7 @@
       top: 50%;
       left: -42px;
       background: $Primary;
+      @include transition(0.3s);
     }
 
     &:not(:last-child) {
@@ -44,6 +45,20 @@
     &__brief {
       padding-top: 15px;
       border-top: 1px solid #000;
+    }
+
+    &:hover {
+      &::before {
+        background-color: $teal;
+      }
+
+      .education__item__header {
+        h1 {
+          &.lg_heading {
+            color: $red !important;
+          }
+        }
+      }
     }
   }
 }

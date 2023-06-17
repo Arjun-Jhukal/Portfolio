@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./_Footer.scss";
-import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsFacebook, BsLinkedin, BsGithub, BsFillEnvelopePaperFill } from "react-icons/bs";
 const Footer = () => {
   const [currentyear, setCurrentYear] = useState(new Date().getFullYear());
 
@@ -21,6 +21,11 @@ const Footer = () => {
           <li>
             <a href="#">
               <BsGithub size={20} />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <BsFillEnvelopePaperFill size={20} />
             </a>
           </li>
         </ul>
