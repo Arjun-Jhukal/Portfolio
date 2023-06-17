@@ -25,7 +25,7 @@ import testimonial_04 from "./assets/img/testimonial/04.jpg";
 import testimonial_05 from "./assets/img/testimonial/05.jpg";
 import testimonial_06 from "./assets/img/testimonial/06.jpg";
 
-export const NavbarItems = ["Home", "Portfolio", "Skills", "Education", "Experience"];
+export const NavbarItems = ["Home", "Portfolio", "Skills", "Education", "Experience", "Review"];
 
 export const skillItems = [
   {
@@ -142,7 +142,7 @@ export const BlogItems = [
 export const PortfolioItems = [
   {
     id: 1,
-    title: "News Portal",
+    title: "Tour and Travel Management Site",
     status: "cloned",
     image: portfolio_01,
     tools: ["HTML", "CSS", "Javascript", "Bootstrap", "Slick", "SCSS"],
@@ -151,7 +151,7 @@ export const PortfolioItems = [
   },
   {
     id: 2,
-    title: "E-Commerce",
+    title: "Accounting Firm",
     status: "Designed and Developed",
     image: portfolio_02,
     tools: ["HTML", "CSS", "Javascript", "Bootstrap", "Slick", "SCSS"],
@@ -160,7 +160,7 @@ export const PortfolioItems = [
   },
   {
     id: 3,
-    title: "Youtube Clone",
+    title: "Facility Management Agency",
     status: "Cloned",
     image: portfolio_03,
     tools: ["HTML", "CSS", "Javascript", "Bootstrap", "Slick", "SCSS", "React"],
@@ -169,7 +169,7 @@ export const PortfolioItems = [
   },
   {
     id: 4,
-    title: "Social Media App",
+    title: "News Portal",
     status: "Desinged & Developed",
     image: portfolio_04,
     tools: ["HTML", "CSS", "Javascript", "Bootstrap", "Slick", "SCSS", "React"],
@@ -178,7 +178,7 @@ export const PortfolioItems = [
   },
   {
     id: 5,
-    title: "Ticket Booking System",
+    title: "E-commerce",
     status: "Designed and Developed",
     image: portfolio_05,
     tools: ["HTML", "CSS", "Javascript", "Bootstrap", "Slick", "SCSS", "React"],
@@ -203,7 +203,7 @@ export const EducationItems = [
     location: "Amargadi-09 Dadeldhura,Nepal",
     year: "2072",
     brief:
-      "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+      "In 2016, I completed my Junior College education from Gyanodaya Vidya Niketan. During my time at Gyanodaya, I gained a solid academic foundation and developed a passion for Computer Science",
   },
   {
     id: 2,
@@ -212,7 +212,7 @@ export const EducationItems = [
     location: "Dhangadi-06 Kailali,Nepal",
     year: "2075",
     brief:
-      "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+      "In 2017, I relocated to Dhangadi, Kailali, where I pursued my Higher Secondary education at the National Academy of Science and Technology. During this period from 2017 to 2018,",
   },
   {
     id: 3,
@@ -221,7 +221,7 @@ export const EducationItems = [
     location: "Kathmandu, Nepal",
     year: "2080",
     brief:
-      "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+      "In 2023, I successfully completed my Bachelor of Science in Computer Science and Information Technology (BSc CSIT) from Tribhuvan University, Kathmandu.",
   },
 ];
 export const ExperienceItems = [
@@ -231,7 +231,7 @@ export const ExperienceItems = [
     institution: "IT Walker",
     location: "Boudha-12 Kathmandu",
     brief:
-      "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+      "At IT Walker in Kathmandu, I gained valuable experience working for approximately one year in the roles of QA (Quality Assurance) and Data Entry. As a QA professional, I was responsible for performing manual testing,I was involved in preparing and updating content across various WordPress websites. And with this I started my Professional Career.",
   },
   {
     id: 2,
@@ -239,6 +239,6 @@ export const ExperienceItems = [
     institution: "Suga Inc.",
     location: "Boudha-12, Kathmandu",
     brief:
-      "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+      "During my internship, I actively participated in frontend development tasks, utilizing HTML, CSS, and JavaScript to create engaging and responsive web pages. I collaborated with senior developers to integrate frontend components with backend systems, ensuring seamless functionality and optimal user experience.",
   },
 ];

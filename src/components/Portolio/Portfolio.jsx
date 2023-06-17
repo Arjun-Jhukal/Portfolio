@@ -1,12 +1,18 @@
 import { PortfolioItems } from "../../data";
 // import { GrLinkNext } from "react-icons/gr";
-// import Title from "../../commonComponent/Title";
+import Title from "../../commonComponent/Title";
 import "./_Portfolio.scss";
 
 const Portfolio = () => {
   return (
-    <section className="portfolio">
+    <section className="portfolio section_gap" id="Portfolio">
       <div className="container">
+        <Title
+          title={"Each piece represents my passion, dedication, and expertise in frontend Development"}
+          className={"flex-column "}
+          sub_title={"Explore My Work"}
+          headingColor={"black"}
+        />
         <div className="row">
           {PortfolioItems.map((item) => {
             return (
@@ -31,6 +37,11 @@ const Portfolio = () => {
               </div>
             );
           })}
+        </div>
+        <div className="portfolio__btn text-center">
+          <a href="#" className="btn btn__view__all">
+            View All Project
+          </a>
         </div>
       </div>
     </section>

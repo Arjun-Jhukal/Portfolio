@@ -1,11 +1,10 @@
-const Title = ({ sub_title, className, title, field }) => {
+const Title = (props) => {
   return (
-    <div className="section_title mb-3">
-      {sub_title ? <h1 className="sub_heading">{sub_title}</h1> : ""}
-      <h1 className={` ${className}`}>
-        {title}
-        {field ? <span>{field}</span> : ""}
-      </h1>
+    <div className={`section_title ${props.className}`}>
+      <h1 className="sub_heading">{props.sub_title}</h1>
+      <h1 className={`lg_heading ${props.headingColor}`}>{props.title}</h1>
+
+      {props.brief ? <p>{props.brief}</p> : ""}
     </div>
   );
 };

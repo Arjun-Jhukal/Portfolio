@@ -2,11 +2,24 @@ import { useEffect, useState } from "react";
 import "./_Navbar.scss";
 import HeaderLogo from "../../assets/img/company/png/logo-no-background.png";
 import { NavbarItems } from "../../data";
+
+import { FaBars } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
   const [active, setActive] = useState("Home");
+  const [showMenu, setShowMenu] = useState({
+    show: false,
+    showCloseBtn: false,
+    showBurgerBtn: true,
+  });
 
   const toggleActive = (value) => {
     setActive(value);
+    setShowMenu({
+      show: false,
+      showCloseBtn: false,
+      showBurgerBtn: true,
+    });
   };
 
   const [isFixed, setIsFixed] = useState(false);
@@ -23,6 +36,15 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   });
+
+  const toggleMobileMenu = () => {
+    setShowMenu({
+      show: true,
+      showCloseBtn: true,
+      showBurgerBtn: false,
+    });
+  };
+
   return (
     <header className={isFixed ? "header fixed" : "header"}>
       <div className="container-fluid">
@@ -35,12 +57,12 @@ const Navbar = () => {
             </div>
           </div>
           <nav className="nav">
-            <ul className="nav__items">
+            <ul className={showMenu.show ? "nav__items active" : "nav__items"}>
               {NavbarItems.map((item, index) => {
                 return (
                   <li key={index}>
                     <a
-                      href="#"
+                      href={`#${item}`}
                       onClick={() => {
                         toggleActive(item);
                       }}
@@ -52,6 +74,9 @@ const Navbar = () => {
                 );
               })}
             </ul>
+            <div className="d-lg-none">
+              <FaBars size={32} className="text-light" style={{ cursor: "pointer" }} onClick={toggleMobileMenu} />
+            </div>
           </nav>
         </div>
       </div>

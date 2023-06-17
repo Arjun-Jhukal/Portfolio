@@ -4,7 +4,7 @@ import cv from "../../assets/img/profile/cv.pdf";
 import bannerImage from "../../assets/img/profile/banner-03.png";
 
 const Banner = () => {
-  // const intro = ["Arjun J.", "Freelancer", "Frontend Developer"];
+  // const intro = ["Arjun J.", "Freelancer", " A Frontend Developer"];
   return (
     <section className="banner">
       <div className="container">
@@ -18,11 +18,11 @@ const Banner = () => {
             <div className="banner__text">
               <span className="sub_heading">Hi There!</span>
               <h1 className="lg_heading">
-                I&apos;m <span>A Frontend Developer</span>
+                I&apos;m <span>Arjun Jhukal</span>
               </h1>
               <p>
-                I&apos;m a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web
-                applications through carefully crafted code and user-centric design.
+                I&apos;m a frontend developer based in Kathmandu, Nepal. I build a beautiful and clean web application through crafted code and
+                user-centric design
               </p>
 
               <div className="banner__btns">

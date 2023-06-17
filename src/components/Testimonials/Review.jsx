@@ -28,24 +28,10 @@ const Review = () => {
     arrows: false,
     // prevArrow: <PrevArrow />,
     // nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
   };
 
   return (
-    <section className="review section_gap">
+    <section className="review section_gap" id="Review">
       <div className="container">
         <Slider className=" justify-content-between" {...settings}>
           {TestimonialItems.map((item, index) => {

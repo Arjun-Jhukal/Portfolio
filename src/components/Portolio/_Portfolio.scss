@@ -2,6 +2,7 @@
 .portfolio {
   position: relative;
   z-index: 1;
+  background-color: $white;
   &__item {
     padding: 15px;
     box-shadow: $boxShadow_01;

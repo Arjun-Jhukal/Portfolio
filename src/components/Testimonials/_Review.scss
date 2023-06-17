@@ -1,5 +1,8 @@
 @import "../../assets/scss/_variables.scss";
 .review {
+  height: 100vh;
+  display: grid;
+  place-items: center;
   &__item {
     // box-shadow: $boxShadow_01;
     // border: 1px solid #f7f7f7;
@@ -54,6 +57,17 @@
 
     &::before {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .review {
+    &__item {
+      flex-direction: column;
+    }
+    &__text {
+      text-align: center !important;
     }
   }
 }

@@ -1,18 +1,22 @@
 import { skillItems } from "../../data";
 import "./_Skill.scss";
 import Title from "../../commonComponent/Title";
-import image_01 from "../../assets/img/banner/01.png";
+// import image_01 from "../../assets/img/banner/01.png";
 
 const Skill = () => {
   return (
-    <section className="skill section_gap">
+    <section className="skill " id="Skills">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-12">
-            <Title title={"Tools and Technologies That i an Comfortable With"} className={"md_heading"} sub_title={"My Skills"} />
-            {/* <div className="skill__banner_image">
-              <img src={image_01} alt="Vs code screen" />
-            </div> */}
+            <Title
+              title={"As you explore my skills section, you'll gain insight into the strengths I bring to the table."}
+              className={"flex-column"}
+              sub_title={"My Skills"}
+              brief={
+                "I am continuously expanding and refining my skill set to stay at the forefront of industry trends and best practices. I believe in the power of continuous learning and strive to enhance my abilities to deliver exceptional outcomes."
+              }
+            />
           </div>
           <div className="col-lg-6 col-12">
             <div className="row">

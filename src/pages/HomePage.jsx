@@ -15,7 +15,7 @@ const HomePage = () => {
       <Banner />
       <Portfolio />
       <Skill />
-      <div className="container">
+      <div className="container section_gap">
         <div className="row">
           <div className="col-lg-6 col-12">
             <Education />

@@ -3,9 +3,9 @@ import "./_Experience.scss";
 
 const Experience = () => {
   return (
-    <section className="education ">
+    <section className="education" id="Experience">
       <div className="education__title">
-        <h1 className="lg_heading mb-5 text-center">Experience</h1>
+        <h1 className="lg_heading mb-5 text-center">Professional Experience</h1>
       </div>
       {ExperienceItems.map((item) => {
         return (
