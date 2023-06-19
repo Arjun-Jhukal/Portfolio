@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import Title from "../../commonComponent/Title";
 const Review = () => {
   // const PrevArrow = ({ onClick }) => (
   //   <button className="slick-arrow slick-prev" onClick={onClick}>
@@ -33,6 +34,14 @@ const Review = () => {
   return (
     <section className="review section_gap" id="Review">
       <div className="container">
+        <Title
+          title={
+            "Explore what my clients have to say about their experience working with me. Discover how I've helped them achieve their goals and create exceptional results"
+          }
+          className={"flex-column "}
+          sub_title={"Clients Speak About My Work"}
+          headingColor={"white"}
+        />
         <Slider className=" justify-content-between" {...settings}>
           {TestimonialItems.map((item, index) => {
             return (
