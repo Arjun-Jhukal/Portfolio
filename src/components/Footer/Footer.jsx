@@ -5,7 +5,7 @@ const Footer = () => {
   const [currentyear, setCurrentYear] = useState(new Date().getFullYear());
 
   return (
-    <footer className="footer section_gap">
+    <footer className="footer">
       <div className="container text-center">
         <ul className="footer__socials">
           <li>
@@ -33,6 +33,17 @@ const Footer = () => {
           <p>
             Copyright &copy; {currentyear} <span>Arjun Jhukal</span>. All Right Reserved
           </p>
+          <ul className="footer__menu">
+            <li>
+              <a href="#">Blogs</a>
+            </li>
+            <li>
+              <a href="#">Privacy & Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms and Conditions</a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

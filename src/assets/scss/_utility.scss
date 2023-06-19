@@ -188,3 +188,41 @@
     }
   }
 }
+
+.main {
+  .header {
+    position: initial;
+  }
+}
+
+.banner__02 {
+  // margin-top: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #000;
+  // border-top: 1px solid #000;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $red;
+      }
+
+      &::after {
+        content: "/";
+        display: inline-block;
+        margin-left: 8px;
+        color: $white;
+      }
+    }
+    span {
+      color: $red;
+    }
+  }
+}
