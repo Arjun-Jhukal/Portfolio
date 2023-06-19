@@ -8,6 +8,7 @@ import Education from "../components/Education/Education";
 import Cta from "../components/cta/Cta";
 import Footer from "../components/Footer/Footer";
 import Review from "../components/Testimonials/Review";
+import CallForm from "../commonComponent/CallForm";
 const HomePage = () => {
   return (
     <Auxilary>
@@ -31,6 +32,8 @@ const HomePage = () => {
         <Review />
       </main>
       <Footer />
+
+      {/* <CallForm /> */}
     </Auxilary>
   );
 };

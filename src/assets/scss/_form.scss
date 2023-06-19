@@ -1,0 +1,36 @@
+@import "./_variables.scss";
+.request__call {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: $Primary;
+  z-index: 9999;
+
+  .form__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    background: #000;
+
+    select,
+    input[type="text"] {
+      flex-basis: 15%;
+      border-right: 1px solid $white;
+    }
+    input[type="tel"] {
+      flex-basis: 85%;
+    }
+
+    input,
+    select {
+      background: transparent;
+      border: none;
+      color: $white;
+      padding: 10px 20px;
+    }
+  }
+}

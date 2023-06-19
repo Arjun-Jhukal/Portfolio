@@ -3,22 +3,22 @@ const InputField = (props) => {
     case "input":
       return (
         <>
-          <label> {props.label}</label>
-          <input type={props.inputType} value="" placeholder={props.placeholder} onChange={props.onChange} />
+          {props.label ? <label> {props.label}</label> : ""}
+          <input type={props.inputType} value={props.value} placeholder={props.placeholder} onChange={props.onChange} readOnly={props.readOnly} />
         </>
       );
     case "textarea":
       return (
         <>
-          <label>{props.label}</label>
-          <textarea cols="30" rows="7" placeholder={props.placeholder} onChange={props.onChange}></textarea>
+          {props.label ? <label> {props.label}</label> : ""}
+          <textarea cols="30" rows="7" value={props.value} placeholder={props.placeholder} onChange={props.onChange}></textarea>
         </>
       );
     default:
       return (
         <>
           {props.label ? <label>{props.label}</label> : ""}
-          <input type={props.inputType} placeholder={props.placeholder} onChange={props.onChange} />
+          <input type={props.inputType} value={props.value} placeholder={props.placeholder} onChange={props.onChange} />
         </>
       );
   }
