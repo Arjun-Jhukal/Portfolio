@@ -1,7 +1,7 @@
 import { PortfolioItems } from "../../data";
 import Title from "../../commonComponent/Title";
 import "./_Portfolio.scss";
-
+import { Link } from "react-router-dom";
 import { AiOutlineArrowRight, AiOutlineGithub, AiOutlineExpand, AiFillCodeSandboxCircle } from "react-icons/ai";
 
 const Portfolio = () => {
@@ -55,9 +55,9 @@ const Portfolio = () => {
           })}
         </div>
         <div className="portfolio__btn text-center">
-          <a href="#" className="btn btn__view__all">
+          <Link to={"/portfolio"} className="btn btn__view__all">
             View All Project
-          </a>
+          </Link>
         </div>
       </div>
     </section>

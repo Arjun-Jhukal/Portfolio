@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./_Navbar.scss";
 import HeaderLogo from "../../assets/img/company/png/logo-no-background.png";
 import { NavbarItems } from "../../data";
-
+import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 // import { AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
@@ -59,15 +59,15 @@ const Navbar = () => {
               {NavbarItems.map((item, index) => {
                 return (
                   <li key={index}>
-                    <a
-                      href={`#${item}`}
+                    <Link
                       onClick={() => {
                         toggleActive(item);
                       }}
+                      to={`/${item}`}
                       className={active === item ? "active nav__link" : "nav__link"}
                     >
                       {item}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
