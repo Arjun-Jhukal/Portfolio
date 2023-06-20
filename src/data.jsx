@@ -1,5 +1,3 @@
-import image01 from "./assets/react.svg";
-
 import skill_01 from "./assets/img/skills/html-5.png";
 import skill_02 from "./assets/img/skills/css-3.png";
 import skill_03 from "./assets/img/skills/js.png";
@@ -28,6 +26,8 @@ import testimonial_06 from "./assets/img/testimonial/06.jpg";
 import blog_01 from "./assets/img/blog/01.jpg";
 import blog_02 from "./assets/img/blog/02.jpg";
 import blog_03 from "./assets/img/blog/03.jpg";
+import blog_04 from "./assets/img/blog/04.jpg";
+import blog_04_01 from "./assets/img/blog/05.jpg";
 
 export const NavbarItems = ["Home", "Portfolio", "Skills", "Education", "Experience", "Blog", "Review"];
 
@@ -143,12 +143,63 @@ export const BlogItems = [
   },
   {
     id: 2,
-    title: "Father Day [Buwa Ko Mukh Herne Din] 14th September | 28th Bhadra ",
+    title: "Father's Day 2023: Celebrating Fatherhood and Honoring Dad's Unconditional Love",
     description:
-      "Find out the date for Father's Day 2023 and learn how to celebrate this special occasion. Get ideas for gifts, activities, and heartfelt wishes to make your dad feel appreciated.",
+      "Experience the Joy of Father's Day: Celebrating Fatherhood and Honoring the Unbreakable Bond with Dad, filled with heartfelt stories, gift ideas, and activities to make this day truly memorable.",
+    intro: [
+      "Father's Day is an occasion to recognize the contributions and sacrifices that fathers make for their families. It's a time to show affection and respect to fathers, spend quality time together, and make them feel special. People often give gifts, cards, or personalized items to their fathers, take them out for a meal or a special outing, or simply spend the day engaging in activities that their fathers enjoy.",
+
+      "The origin of Father's Day dates back to the early 20th century. The idea was inspired by the establishment of Mother's Day, and it aimed to create a similar holiday to honor fathers. The first Father's Day was celebrated in the United States in 1910, and it gradually gained recognition worldwide.",
+    ],
+    activities: {
+      title: "As for activities and things to do on Father's Day, here are some ideas:",
+      list: [
+        "Spend quality time together: Plan a day to spend time with your father or father figure. Engage in activities that he enjoys, such as going for a hike, fishing, playing sports, watching a movie, or having a picnic.",
+        "Prepare a special meal: Cook a delicious meal for your father or organize a family barbecue. You can prepare his favorite dishes or try out new recipes that he might enjoy.",
+
+        "Write a heartfelt letter or card: Express your feelings and appreciation by writing a heartfelt letter or card. Share memories, thank him for his guidance and support, and let him know how much he means to you.",
+
+        "Give a thoughtful gift: Consider giving your father a meaningful gift that reflects his interests and passions. It could be a book he's been wanting to read, a gadget he needs, a personalized item, or something that aligns with his hobbies.",
+
+        "Create a photo album or scrapbook: Gather memorable photos and create a photo album or scrapbook showcasing precious moments and experiences you've shared together.",
+
+        "Plan a family outing: Organize a family outing or a day trip to a place your father would enjoy. It could be visiting a museum, going to a sports event, exploring a new city, or simply spending a day in nature.",
+      ],
+    },
+    em: "Father's Day: Celebrating the Guiding Light in Our Lives - Honoring Fatherhood with Love and Gratitude",
+    wishes: {
+      title: "Here are 20 wishes you can use to express your love and appreciation for your father on Father's Day:",
+      list: [
+        "Happy Father's Day, Dad! Thank you for being my rock and guiding me through life. I'm grateful for your love and support always.",
+        "Wishing the best father in the world a very Happy Father's Day! Your love and wisdom have shaped me into who I am today.",
+
+        "Dad, you're my superhero and role model. Thank you for always being there for me. Happy Father's Day!",
+        "Sending love and warm wishes to the coolest dad on this special day. Happy Father's Day, Dad!",
+        "To my amazing father, Happy Father's Day! Your strength, kindness, and love inspire me every day.",
+        "Dad, you've taught me so much and continue to be my guiding light. Thank you for being the best father ever. Happy Father's Day!",
+        "Happy Father's Day to the man who has shown me what unconditional love truly means. I'm lucky to have you as my dad.",
+        "Dad, you're my first hero and my forever hero. Thank you for always being my biggest supporter. Happy Father's Day!",
+        "Wishing a fantastic Father's Day to the world's greatest dad. Your love and sacrifices mean the world to me.",
+        "Dad, your love and care have given me strength and confidence. I'm forever grateful. Happy Father's Day!",
+        "On this special day, I want to thank you for being an extraordinary father. Your presence in my life is a blessing. Happy Father's Day, Dad!",
+        "Happy Father's Day to the man who taught me important values, encouraged my dreams, and showed me what it means to be a good person.",
+        "Dad, your love has been a constant source of support and comfort. Today, I celebrate you and all that you mean to me. Happy Father's Day!",
+        "Wishing you a day filled with love and happiness, Dad. Thank you for being an incredible father. Happy Father's Day!",
+        "Dad, you've always believed in me even when I doubted myself. Your faith in me has made all the difference. Happy Father's Day!",
+        "Sending warm wishes to the most caring and loving father. Thank you for everything you do. Happy Father's Day!",
+        "Dad, your words of wisdom and encouragement have shaped my life in countless ways. I'm forever grateful. Happy Father's Day!",
+        "Happy Father's Day to the man who can always make me smile, even on the toughest days. I love you, Dad!",
+        "Dad, you're not just my father, but also my best friend. Thank you for your love and unwavering support. Happy Father's Day!",
+        "Today and every day, I celebrate the amazing father you are. Thank you for being my hero. Happy Father's Day!",
+      ],
+    },
     date: "2023-06-20",
-    image: blog_02,
+    image: blog_04_01,
+    image_01: blog_04,
     like: 70,
+    author: "Arjun Jhukal",
+    authorMessage:
+      "On this Father's Day, we extend our deepest gratitude to all fathers, celebrating their unwavering love and guidance. May your day be filled with joy and appreciation for the remarkable impact you have on our lives.",
   },
   {
     id: 3,

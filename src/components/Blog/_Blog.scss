@@ -29,7 +29,7 @@
       border-radius: 10px;
 
       a.sm_heading {
-        color: $red;
+        color: $red !important;
         padding: 15px 0 5px;
         @include line-clamp(1);
       }

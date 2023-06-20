@@ -1,6 +1,5 @@
 import "./_Blog.scss";
-// import image_01 from "../../assets/img/blog/01.jpg";
-
+import { Link } from "react-router-dom";
 import { BsFillCalendarDayFill } from "react-icons/bs";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 
@@ -16,9 +15,9 @@ const Blog = () => {
             return (
               <div className="col-lg-6 col-md-12" key={index}>
                 <div className="blog__item">
-                  <a href="#" className="blog__item__image">
+                  <Link to={`/blog/${index}`} className="blog__item__image">
                     <img src={item.image} alt={item.title} />
-                  </a>
+                  </Link>
                   <div className="blog__item__text">
                     <ul>
                       <li>
@@ -30,9 +29,9 @@ const Blog = () => {
                         <span>{item.like}</span>
                       </li>
                     </ul>
-                    <a href="#" className="sm_heading">
+                    <Link to={`/blog/${index}`} className="sm_heading">
                       {item.title}
-                    </a>
+                    </Link>
 
                     <p>{item.description}</p>
                   </div>
