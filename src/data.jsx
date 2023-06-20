@@ -143,10 +143,10 @@ export const BlogItems = [
   },
   {
     id: 2,
-    title: "Nepal's Festivals: Celebrating Life, Culture, and Tradition",
+    title: "Father Day [Buwa Ko Mukh Herne Din] 14th September | 28th Bhadra ",
     description:
-      "By focusing primarily on Japan, we are dedicated to empowering Nepali students to pursue educational opportunities in this dynamic country. Through our mission and vision, we aim to make a significant impact on the lives of students, fostering educational excellence, cultural understanding, and long-lasting connections between Nepal and Japan.",
-    date: "2023-01-01",
+      "Find out the date for Father's Day 2023 and learn how to celebrate this special occasion. Get ideas for gifts, activities, and heartfelt wishes to make your dad feel appreciated.",
+    date: "2023-06-20",
     image: blog_02,
     like: 70,
   },

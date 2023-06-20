@@ -1,5 +1,5 @@
 import "./_Blog.scss";
-import image_01 from "../../assets/img/blog/01.jpg";
+// import image_01 from "../../assets/img/blog/01.jpg";
 
 import { BsFillCalendarDayFill } from "react-icons/bs";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
@@ -23,11 +23,11 @@ const Blog = () => {
                     <ul>
                       <li>
                         <BsFillCalendarDayFill />
-                        <span>25th April 2023</span>
+                        <span>{item.date}</span>
                       </li>
                       <li>
                         <AiOutlineHeart />
-                        <span>65</span>
+                        <span>{item.like}</span>
                       </li>
                     </ul>
                     <a href="#" className="sm_heading">

@@ -3,6 +3,18 @@
   position: relative;
   z-index: 1;
   background-color: $white;
+
+  .sub_heading {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 85%;
+      left: 0;
+      width: 40%;
+      height: 2px;
+      background-color: $red;
+    }
+  }
   &__item {
     padding: 15px;
     // box-shadow: $boxShadow_01;

@@ -15,23 +15,24 @@
 }
 .md_heading {
   font-size: $md_font;
+  text-transform: uppercase;
 }
 .sm_heading {
   font-size: $sm_font;
+  text-transform: capitalize;
 }
 
-.md_heading,
-.sm_heading {
-  text-transform: uppercase;
-}
 .sub_heading {
   text-transform: uppercase;
   color: $red !important;
   font-weight: 600;
   line-height: 1.8;
-  color: $white;
+  // color: $white;
   font-size: 16px;
-  margin-bottom: 0;
+  // margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+  // background-color: $white;
 }
 
 .section_gap {
@@ -52,10 +53,7 @@
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
-
-  h1 {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .btn {
