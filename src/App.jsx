@@ -6,6 +6,7 @@ import AlbumPage from "./pages/Contact";
 import ErrorPage from "./pages/ErrorPage";
 import BlogDetail from "./pages/BlogDetailPage";
 import AboutPage from "./pages/AboutPage";
+import Privacy from "./pages/Privacy";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/blog/:id" element={<BlogDetail />} />
         <Route path="/contact" element={<AlbumPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/privacy" element={<Privacy />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>

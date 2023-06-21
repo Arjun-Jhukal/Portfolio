@@ -1,8 +1,29 @@
-{
-  "NavbarItems": [{}],
-  "portfolioItems": [{}],
-  "educationItems": [{}],
-  "experienceItems": [{}],
-  "testimonialItems": [{}],
-  "blogItems": [{}]
-}
+[
+  {
+    "EffectiveDate": "2023-06-21",
+    "brief": "Thank you for visiting my personal portfolio website. I respect your privacy and am committed to protecting any personal information you may provide while browsing or interacting with this website. This Privacy Policy outlines how I collect, use, and safeguard your information. By accessing or using this website, you consent to the terms of this Privacy Policy.",
+    "title": [
+      "Information Collection",
+      "Use of Information",
+      "Information Sharing",
+      "Cookies and Tracking Technologies",
+      "Third-Party Links",
+      "Data Security",
+      "Children's Privacy",
+      "Changes to this Privacy Policy",
+      "Contact Information"
+    ],
+    "titleInfo": [
+      "I may collect personal information from you when you voluntarily provide it while contacting me through the contact form or subscribing to any newsletter or updates. The information collected may include your name, email address, and any other information you choose to provide.",
+      "I will only use the information you provide for the purpose for which it was collected, such as responding to your inquiries, providing the services you request, or sending relevant updates about my work. I may also use the information to improve the content and functionality of my website.",
+      "I do not sell, trade, or rent your personal information to third parties. However, I may share your information with trusted service providers who assist me in operating my website or conducting business activities, such as email service providers or analytics tools. These third parties are contractually obligated to keep your information confidential and use it only for the purposes specified.",
+      "My website may use cookies and similar tracking technologies to enhance your browsing experience and collect information about how you use the website. These technologies may collect information such as your IP address, browser type, and browsing behavior. You can adjust your browser settings to disable cookies, but please note that some features of the website may not function properly as a result.",
+      "My website may contain links to third-party websites. I am not responsible for the privacy practices or content of these websites. I encourage you to review the privacy policies of those third-party websites before providing any personal information.",
+      "I take reasonable measures to protect the personal information you provide from unauthorized access, disclosure, alteration, or destruction. However, please understand that no method of transmission over the internet or electronic storage is 100% secure. I cannot guarantee absolute security, and you acknowledge and accept this inherent risk.",
+      "My website is not intended for children under the age of 13. I do not knowingly collect or store personal information from children. If you are a parent or guardian and believe that your child has provided personal information on my website, please contact me, and I will promptly delete the information.",
+      "I reserve the right to update or modify this Privacy Policy at any time. Any changes will be effective immediately upon posting the revised Privacy Policy on this website. It is your responsibility to review this Privacy Policy periodically for any updates.",
+      "If you have any questions, concerns, or requests regarding this Privacy Policy or the handling of your personal information, please contact me using the information provided on my website."
+    ],
+    "ending": "By using my website, you signify your acceptance of this Privacy Policy. If you do not agree with the terms of this Privacy Policy, please do not use this website."
+  }
+]
