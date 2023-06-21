@@ -216,7 +216,7 @@ export const BlogItems = [
     description:
       "By focusing primarily on Japan, we are dedicated to empowering Nepali students to pursue educational opportunities in this dynamic country. Through our mission and vision, we aim to make a significant impact on the lives of students, fostering educational excellence, cultural understanding, and long-lasting connections between Nepal and Japan.",
     date: "2023-01-01",
-    image: blog_01,
+    image: blog_02,
     like: 69,
   },
   {

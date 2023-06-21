@@ -1,12 +1,14 @@
 @import "../../assets/scss/styles.scss";
 .header {
-  background: $trasnparent_primary;
-  //   background: set-text-color($Primary);
+  background: $secondary_color;
+  //   background: set-text-color($primary_color);
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   padding: 15px 0;
+  z-index: 9;
+
   &__logo {
     display: flex;
     justify-content: flex-start;
@@ -24,7 +26,7 @@
         line-height: 1;
         font-size: $sm_font;
         font-weight: 800;
-        color: $red;
+        color: $text_color;
         text-transform: uppercase;
         position: relative;
         z-index: 1;
@@ -45,18 +47,18 @@
 
       li {
         a {
-          color: $white;
+          color: $primary_color;
           text-transform: uppercase;
           font-size: 14px;
           font-weight: 500;
           @include transition(0.3s);
 
           &.active {
-            color: $red;
+            color: $text_color;
           }
 
           &:hover {
-            color: $red;
+            color: $text_color;
           }
         }
       }
@@ -66,10 +68,9 @@
   &.fixed {
     position: fixed;
     top: 0;
-    background-color: $Primary;
+    background-color: $secondary_color;
     width: 100%;
     z-index: 9999;
-
     animation: fadein 0.5s linear;
   }
 
@@ -96,7 +97,7 @@
         height: 100vh;
         flex-direction: column;
         justify-content: center;
-        background-color: $Primary;
+        background-color: $primary_color;
 
         animation: fadein 0.3s linear;
         opacity: 0;

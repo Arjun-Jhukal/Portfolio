@@ -16,8 +16,8 @@
     cursor: pointer;
 
     &.active {
-      background-color: $red;
-      color: $white;
+      background-color: $text_color;
+      color: $primary_color;
     }
   }
 }

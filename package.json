@@ -20,7 +20,8 @@
     "react-slick": "^0.29.0",
     "sass": "^1.63.4",
     "scss": "^0.2.4",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "typed.js": "^2.0.16"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

@@ -1,7 +1,7 @@
 @import "../../assets/scss/_variables.scss";
 .footer {
   background-color: #000;
-  color: $white;
+  color: $primary_color;
   padding: 50px 0 30px;
 
   &__socials {
@@ -13,16 +13,16 @@
 
     li {
       a {
-        border: 1px solid $red;
+        border: 1px solid $text_color;
         width: 40px;
         height: 40px;
         border-radius: 50%;
         display: grid;
         place-items: center;
-        color: $white;
+        color: $primary_color;
 
         &:hover {
-          background-color: $red;
+          background-color: $text_color;
         }
       }
     }
@@ -31,7 +31,7 @@
   &__copyright {
     p {
       span {
-        color: $red;
+        color: $text_color;
         font-weight: 400;
       }
     }
@@ -45,11 +45,11 @@
 
     li {
       a {
-        color: $white;
+        color: $primary_color;
       }
 
       &:not(:last-child) {
-        border-right: 2px solid $white;
+        border-right: 2px solid $primary_color;
         padding-right: 15px;
       }
     }

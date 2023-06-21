@@ -7,7 +7,7 @@ const PortfolioPage = () => {
     <main className="main">
       <Navbar />
       <PageBanner pageTitle={"Portfolio"} />
-      <Portfolio />
+      <Portfolio length={6} />
       <Footer />
     </main>
   );

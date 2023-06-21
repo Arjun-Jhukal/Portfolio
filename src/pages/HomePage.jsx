@@ -7,15 +7,15 @@ import Experience from "../components/Experience/Experience";
 import Education from "../components/Education/Education";
 import Cta from "../components/cta/Cta";
 import Footer from "../components/Footer/Footer";
-import Review from "../components/Testimonials/Review";
-import CallForm from "../commonComponent/CallForm";
+// import Review from "../components/Testimonials/Review";
+// import CallForm from "../commonComponent/CallForm";
 const HomePage = () => {
   return (
     <Auxilary>
       <Navbar />
       <main className="main">
         <Banner />
-        <Portfolio />
+        <Portfolio length={4} />
         <Skill />
         <div className="container section_gap">
           <div className="row">
@@ -29,7 +29,6 @@ const HomePage = () => {
         </div>
 
         <Cta />
-        <Review />
       </main>
       <Footer />
 

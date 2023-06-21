@@ -6,7 +6,7 @@
   height: 100%;
   display: grid;
   place-items: center;
-  background-color: $Primary;
+  background-color: $primary_color;
   z-index: 9999;
 
   .form__content {
@@ -19,7 +19,7 @@
     select,
     input[type="text"] {
       flex-basis: 15%;
-      border-right: 1px solid $white;
+      border-right: 1px solid $primary_color;
     }
     input[type="tel"] {
       flex-basis: 85%;
@@ -29,7 +29,7 @@
     select {
       background: transparent;
       border: none;
-      color: $white;
+      color: $primary_color;
       padding: 10px 20px;
     }
   }

@@ -1,32 +1,39 @@
-@import "../../assets/scss/styles.scss";
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
 .portfolio {
-  position: relative;
-  z-index: 1;
-  background-color: $white;
+  .row {
+    margin-bottom: 50px;
 
-  .sub_heading {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 85%;
-      left: 0;
-      width: 40%;
-      height: 2px;
-      background-color: $red;
+    > div {
+      &:nth-child(odd) {
+        .portfolio__item__image {
+          order: 2;
+        }
+      }
     }
   }
   &__item {
-    padding: 15px;
-    // box-shadow: $boxShadow_01;
-    // background: linear-gradient(-30deg, #000 10%, transparent);
-    background: $Primary;
-    border-radius: 5px;
-    margin-bottom: 30px;
     position: relative;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    > div {
+      flex: 1 1 50%;
+
+      p {
+        @include line-clamp(4);
+      }
+    }
 
     &__image {
-      height: 200px;
+      // min-width: 300px;
+      height: 280px;
+      overflow: hidden;
 
       img {
         object-fit: cover;
@@ -35,30 +42,39 @@
       }
     }
 
-    &__text {
-      padding-top: 15px;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
 
-      h1 {
-        color: $red;
-      }
-      p {
-        @include line-clamp(3);
+      li {
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover {
+          color: $text_color;
+        }
       }
     }
 
     &__btns {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-top: 30px;
+      justify-content: center;
+      gap: 30px;
+      position: absolute;
+      bottom: 0;
 
-      span {
-        font-size: 12px;
+      .btn {
+        text-transform: uppercase;
+        font-weight: 500;
       }
     }
 
     &:hover {
-      // background-color: red !important;
       .portfolio__item__image {
         img {
           object-position: bottom;
@@ -66,18 +82,32 @@
       }
     }
   }
-  &__status {
-    font-family: $fontFamily_02;
-    background-color: $red;
-    color: $white;
-    padding: 10px;
-    font-weight: 300;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-transform: uppercase;
-    font-size: 12px;
-    border-radius: 20px 0 20px 0;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    .row {
+      > div {
+        &:nth-child(odd) {
+          .portfolio__item__text {
+            order: 2;
+          }
+        }
+      }
+    }
+
+    &__item {
+      flex-direction: column;
+      margin-bottom: 30px;
+
+      > div {
+        width: 100%;
+        flex-basis: 250px;
+      }
+
+      &__btns {
+        position: initial;
+      }
+    }
   }
 }

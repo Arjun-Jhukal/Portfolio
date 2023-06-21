@@ -14,6 +14,7 @@
 
       img {
         transition: all 1s ease-in-out;
+        object-fit: cover;
       }
     }
 
@@ -29,7 +30,7 @@
       border-radius: 10px;
 
       a.sm_heading {
-        color: $red !important;
+        color: $text_color !important;
         padding: 15px 0 5px;
         @include line-clamp(1);
       }
@@ -40,7 +41,7 @@
         align-items: center;
 
         li {
-          color: $red;
+          color: $text_color;
           display: flex;
           align-items: center;
           justify-content: flex-start;
@@ -51,7 +52,7 @@
           }
 
           span {
-            color: $white !important;
+            color: $primary_color !important;
           }
         }
       }

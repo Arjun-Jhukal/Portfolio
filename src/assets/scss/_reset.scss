@@ -8,8 +8,8 @@
 }
 
 body {
-  font-family: $fontFamily_01;
-  background-color: $Primary;
+  font-family: $fontFamily_02;
+  // background-color: $primary_color;
 }
 a {
   color: initial;
@@ -22,7 +22,7 @@ a {
   }
 }
 p {
-  color: $light_gray;
+  color: $secondary_color;
 }
 ul,
 li {

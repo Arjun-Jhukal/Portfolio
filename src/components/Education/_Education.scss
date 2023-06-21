@@ -4,9 +4,10 @@
   padding-left: 30px;
 
   &__item {
-    box-shadow: $boxShadow_01;
+    // box-shadow: $boxShadow_01;
+
     padding: 15px;
-    background-color: $Primary;
+    background-color: $primary_color;
     position: relative;
     z-index: 1;
 
@@ -19,7 +20,7 @@
       position: absolute;
       top: 50%;
       left: -42px;
-      background: $Primary;
+      background: $primary_color;
       @include transition(0.3s);
     }
 
@@ -37,7 +38,7 @@
 
       p {
         &:first-of-type {
-          color: $red;
+          color: $text_color;
         }
       }
     }
@@ -48,6 +49,8 @@
     }
 
     &:hover {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
       &::before {
         background-color: $teal;
       }
@@ -55,7 +58,7 @@
       .education__item__header {
         h1 {
           &.lg_heading {
-            color: $red !important;
+            color: $text_color !important;
           }
         }
       }

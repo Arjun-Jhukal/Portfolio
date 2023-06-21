@@ -11,14 +11,14 @@
   li,
   em,
   a {
-    color: $white !important;
+    color: $primary_color !important;
   }
   &__header {
     padding: 30px 0;
-    color: $white;
+    color: $primary_color;
 
     .md_heading {
-      color: $red;
+      color: $text_color;
     }
     &__info {
       display: flex;
@@ -33,7 +33,7 @@
         gap: 8px;
 
         svg {
-          color: $red;
+          color: $text_color;
         }
       }
     }
@@ -49,7 +49,7 @@
     }
     h4 {
       margin-bottom: 15px;
-      color: $white;
+      color: $primary_color;
     }
     ul {
       margin-bottom: 30px;
@@ -68,7 +68,7 @@
           font-family: fontAwesome;
           display: inline-block;
           margin-right: 8px;
-          color: $red;
+          color: $text_color;
         }
       }
     }
@@ -76,7 +76,7 @@
     em {
       display: block;
       box-shadow: $boxShadow_01;
-      border-left: 2px solid $red;
+      border-left: 2px solid $text_color;
       padding: 15px;
       margin-bottom: 30px;
     }
@@ -89,7 +89,7 @@
 
     h1 {
       margin-bottom: 15px;
-      color: $red;
+      color: $text_color;
     }
   }
 

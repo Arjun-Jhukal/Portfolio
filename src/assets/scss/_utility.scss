@@ -1,21 +1,18 @@
-@import "./variables";
+// @import "./variables";
 .lg_heading {
   font-size: $lg_font;
   text-transform: uppercase;
   font-weight: 700;
   span {
-    color: $red;
+    color: $text_color;
   }
 }
-.md_heading,
-.sm_heading,
-.lg_heading {
-  font-family: 600;
-  color: $white;
-}
+
 .md_heading {
   font-size: $md_font;
   text-transform: uppercase;
+  color: $text_color;
+  font-weight: 700;
 }
 .sm_heading {
   font-size: $sm_font;
@@ -24,15 +21,19 @@
 
 .sub_heading {
   text-transform: uppercase;
-  color: $red !important;
+  color: $text_color !important;
   font-weight: 600;
   line-height: 1.8;
-  // color: $white;
-  font-size: 16px;
-  // margin-bottom: 0;
-  position: relative;
-  z-index: 2;
-  // background-color: $white;
+  font-size: 24px;
+  margin-bottom: 0;
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: $text_color;
+    margin-top: -5px;
+  }
 }
 
 .section_gap {
@@ -45,22 +46,28 @@
   padding-bottom: 80px;
 }
 .black {
-  color: $Primary;
+  color: $primary_color;
 }
 
 .section_title {
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .section_title {
+    margin-bottom: 30px;
+  }
+}
+
 .btn {
   display: inline-block;
+  font-size: 18px;
   padding: 10px 30px;
   border-radius: 50px;
-  color: $white !important;
   @include transition(0.3s);
   position: relative;
   z-index: 1;
@@ -68,7 +75,9 @@
   border: none;
   text-transform: capitalize;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
+
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -84,19 +93,24 @@
   }
 
   &__hire {
-    background-color: $red;
+    background-color: $text_color;
+    color: $primary_color !important;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.3);
+
     &:hover {
-      color: $Primary !important;
       &::before {
-        background: $light_gray;
+        background: $secondary_color;
         width: 120%;
       }
     }
   }
   &__request {
-    border: 1px solid $red;
+    border: 1px solid $text_color;
+    color: $secondary_color;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.3);
 
     &:hover {
+      color: $primary_color;
       &::before {
         background-color: red;
         width: 120%;
@@ -105,27 +119,28 @@
   }
 
   &__view__all {
-    background-color: $red;
+    background-color: $text_color;
     border-radius: 5px;
-
+    color: $primary_color !important;
     &:hover {
-      background-color: $red;
-      color: $white;
+      background-color: $text_color;
+      color: $primary_color;
       box-shadow: 6px 6px 0 #1b2129;
     }
   }
 
   &__github {
-    background-color: #000;
+    background-color: $primary_color;
     border-radius: 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 5px;
+    font-size: 12px;
 
     &:hover {
-      color: $red !important;
-      box-shadow: 6px 6px 0 $red;
+      color: $text_color !important;
+      box-shadow: 6px 6px 0 $text_color;
       background-color: #000;
     }
   }
@@ -150,19 +165,6 @@
   }
 }
 
-// SCroll snap type
-// main {
-//   &.main {
-//     height: 100vh;
-//     overflow-y: scroll;
-//     scroll-snap-type: y proximity;
-//   }
-
-//   section {
-//     scroll-snap-align: start;
-//   }
-// }
-
 .error {
   display: flex;
   flex-direction: column;
@@ -172,13 +174,13 @@
 
   span {
     font-size: 40px;
-    color: $white;
+    color: $secondary_color;
     text-transform: uppercase;
     display: block;
   }
   h1 {
     font-size: 120px;
-    color: $red;
+    color: $text_color;
 
     span {
       font-size: 14px;
@@ -206,21 +208,21 @@
     gap: 15px;
 
     a {
-      color: $white;
+      color: $primary_color;
 
       &:hover {
-        color: $red;
+        color: $text_color;
       }
 
       &::after {
         content: "/";
         display: inline-block;
         margin-left: 8px;
-        color: $white;
+        color: $primary_color;
       }
     }
     span {
-      color: $red;
+      color: $text_color;
     }
   }
 }

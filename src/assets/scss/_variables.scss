@@ -1,36 +1,9 @@
-// Classic Monochrome:
+$primary_color: #fff;
 
-$Primary: #ffffff;
-$light_gray: #d3d3d3;
-$medium_gray: #808080;
-$dark_gray: #333333;
+$secondary_color: #36454f;
+$text_color: #ff2400;
 
-// Elegant Gold:
-
-$Primary: #212428;
-$gold: #ffd700;
-$white: #ffffff;
-$light_gray: #d3d3d3;
-
-// Vibrant Teal:
-
-$Primary: #212428;
-$trasnparent_primary: rgba(0, 0, 0, 0.85);
 $teal: #008080;
-$white: #ffffff;
-$light_gray: #d3d3d3;
-
-// $Minimalist Mint:
-
-$Primary: #212428;
-$Mint_Green: #98ff98;
-$white: #ffffff;
-$light_gray: #d3d3d3;
-
-// $Bold Red:
-
-$Primary: #212428;
-$red: #ff0000;
 
 // fontFamily
 $fontFamily_01: "Roboto", sans-serif;
@@ -39,7 +12,7 @@ $fontFamily_02: "Poppins", sans-serif;
 // Font Size
 $lg_font: 28px;
 $md_font: 24px;
-$sm_font: 16px;
+$sm_font: 20px;
 
 // Box Shadow
 $boxShadow_01: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
@@ -48,4 +21,4 @@ $border_01: 1px solid #f7f7f7;
 $border_02: 15px solid rgba(255, 255, 255, 0.1);
 
 // gradients
-$gradient_01: linear-gradient(to top, $Primary 2%, $trasnparent_primary);
+$gradient_01: linear-gradient(to top, $primary_color 2%, $secondary_color);
