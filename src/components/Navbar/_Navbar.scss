@@ -1,7 +1,7 @@
 @import "../../assets/scss/styles.scss";
 .header {
   background: $secondary_color;
-  //   background: set-text-color($primary_color);
+  background: set-text-color($primary_color);
   position: absolute;
   top: 0;
   left: 0;

@@ -29,7 +29,7 @@ import blog_03 from "./assets/img/blog/03.jpg";
 import blog_04 from "./assets/img/blog/04.jpg";
 import blog_04_01 from "./assets/img/blog/05.jpg";
 
-export const NavbarItems = ["Home", "Portfolio", "Skills", "Education", "Experience", "Blog", "Review"];
+export const NavbarItems = ["Home", "Porjects", "About", "Blog", "Contact"];
 
 export const skillItems = [
   {
