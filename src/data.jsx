@@ -136,7 +136,7 @@ export const BlogItems = [
     id: 1,
     title: "About Me & My Journey",
     description:
-      "By focusing primarily on Japan, we are dedicated to empowering Nepali students to pursue educational opportunities in this dynamic country. Through our mission and vision, we aim to make a significant impact on the lives of students, fostering educational excellence, cultural understanding, and long-lasting connections between Nepal and Japan.",
+      "I am Arjun Jhukal Frontend React Developer from Kathmandu Nepal. I have been working in this field since 2021. During my professional career i have contributed on over 30+ project ",
     date: "2023-01-01",
     image: blog_01,
     like: 69,
@@ -217,24 +217,6 @@ export const BlogItems = [
       "By focusing primarily on Japan, we are dedicated to empowering Nepali students to pursue educational opportunities in this dynamic country. Through our mission and vision, we aim to make a significant impact on the lives of students, fostering educational excellence, cultural understanding, and long-lasting connections between Nepal and Japan.",
     date: "2023-01-01",
     image: blog_02,
-    like: 69,
-  },
-  {
-    id: 5,
-    title: "My thought on Nepali Politics",
-    description:
-      "By focusing primarily on Japan, we are dedicated to empowering Nepali students to pursue educational opportunities in this dynamic country. Through our mission and vision, we aim to make a significant impact on the lives of students, fostering educational excellence, cultural understanding, and long-lasting connections between Nepal and Japan.",
-    date: "2023-01-01",
-    image: blog_01,
-    like: 69,
-  },
-  {
-    id: 6,
-    title: "Nepali Cuisine: A Gastronomic Delight of Flavors and Spices",
-    description:
-      "By focusing primarily on Japan, we are dedicated to empowering Nepali students to pursue educational opportunities in this dynamic country. Through our mission and vision, we aim to make a significant impact on the lives of students, fostering educational excellence, cultural understanding, and long-lasting connections between Nepal and Japan.",
-    date: "2023-01-01",
-    image: blog_01,
     like: 69,
   },
 ];

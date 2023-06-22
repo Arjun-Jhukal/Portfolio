@@ -2,9 +2,6 @@ import { useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import jsonData from "../data.json";
 const Privacy = () => {
-  jsonData.map((item) => {
-    console.log(item.EffectiveDate);
-  });
   return (
     <main className="main">
       <Navbar />
@@ -14,8 +11,8 @@ const Privacy = () => {
           <h1 className="lg_heading mb-5">Privacy Policy</h1>
 
           {jsonData.map((item, index) => {
-            const totalItem = item.title.length;
-            console.log(totalItem);
+            // const totalItem = item.title.length;
+            // console.log(totalItem);
             return (
               <div className="privacy__text" key={index}>
                 <p>Effective Date: {item.EffectiveDate} </p>
@@ -23,10 +20,10 @@ const Privacy = () => {
 
                 {item.title.map((policy, index) => {
                   return (
-                    <>
+                    <div key={index}>
                       <h1 className="md_heading">{item.title[index]}</h1>
                       <p>{item.titleInfo}</p>
-                    </>
+                    </div>
                   );
                 })}
 

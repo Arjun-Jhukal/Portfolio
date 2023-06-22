@@ -127,7 +127,8 @@
   }
 
   &__github {
-    background-color: $primary_color;
+    background-color: $text_color;
+    color: $primary_color;
     border-radius: 0;
     display: flex;
     align-items: center;
@@ -189,37 +190,5 @@
 .main {
   .header {
     position: initial;
-  }
-}
-
-.banner__02 {
-  // margin-top: 15px;
-  padding: 15px 0;
-  border-bottom: 1px solid #000;
-  // border-top: 1px solid #000;
-
-  &__content {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 15px;
-
-    a {
-      color: $primary_color;
-
-      &:hover {
-        color: $text_color;
-      }
-
-      &::after {
-        content: "/";
-        display: inline-block;
-        margin-left: 8px;
-        color: $primary_color;
-      }
-    }
-    span {
-      color: $text_color;
-    }
   }
 }

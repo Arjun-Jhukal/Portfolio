@@ -3,7 +3,7 @@ import Education from "../components/Education/Education";
 import Experience from "../components/Experience/Experience";
 import Navbar from "../components/Navbar/Navbar";
 import Skill from "../components/Skill/Skill";
-import Cta from "../components/cta/Cta";
+// import Cta from "../components/cta/Cta";
 
 import { Auxilary } from "../hoc/Auxilary";
 
@@ -12,7 +12,7 @@ const AboutPage = () => {
     <Auxilary>
       <Navbar />
       <AboutBanner />
-      <Skill />
+
       <div className="container section_gap">
         <div className="row">
           <div className="col-lg-6 col-12">
@@ -23,7 +23,8 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <Cta />
+      <Skill />
+      {/* <Cta /> */}
     </Auxilary>
   );
 };

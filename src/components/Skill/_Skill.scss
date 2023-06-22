@@ -1,9 +1,8 @@
 @import "../../assets/scss/styles.scss";
 .skill {
-  background-color: $teal;
-  height: 100vh;
-  display: grid;
-  place-items: center;
+  background-color: #f7f7f7;
+  padding: 50px 0;
+
   &__item {
     border: $border_01;
     padding: 15px;

@@ -1,36 +1,97 @@
 @import "./_variables.scss";
-.request__call {
+
+form {
+  input,
+  select,
+  textarea {
+    padding: 10px 20px;
+  }
+
+  .row {
+    > div {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.request {
   position: fixed;
   top: 0;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  background-color: $primary_color;
-  z-index: 9999;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: all 0.3s ease;
 
-  .form__content {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    background: #000;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 
-    select,
-    input[type="text"] {
-      flex-basis: 15%;
-      border-right: 1px solid $primary_color;
-    }
-    input[type="tel"] {
-      flex-basis: 85%;
-    }
+  form {
+    max-width: 550px;
+    width: 550px;
+    background-color: $primary_color;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
 
     input,
     select {
-      background: transparent;
-      border: none;
-      color: $primary_color;
-      padding: 10px 20px;
+      margin-bottom: 15px;
+      height: 50px;
+    }
+    .phone_number {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+      z-index: 1;
+
+      &::after {
+        content: "\f107";
+        font-family: "fontAwesome";
+        position: absolute;
+        top: 15px;
+        left: 150px;
+        z-index: -1;
+      }
+
+      > select {
+        flex: 1 1 50%;
+        font-size: 14px;
+        border-right: none;
+        border-radius: 5px 0 0 5px;
+        background-color: transparent;
+      }
+      > input {
+        border-radius: 0 5px 5px 0;
+      }
     }
   }
+}
+
+.btn__close {
+  background-color: $text_color;
+  color: $primary_color;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: -20px;
+  right: -20px;
 }
