@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import InputField from "../commonComponent/InputField";
 import Button from "../commonComponent/Button";
 import "../assets/scss/_form.scss";
+import Title from "../commonComponent/Title";
 const Contact = () => {
   const inputRef = useRef(null);
 
@@ -17,6 +18,7 @@ const Contact = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-12 ">
+              <Title sub_title={"Reach Out To Me"} title={"Fill up the form and i will respond in next 24 hrs"} className={"flex-column"} />
               <form className="contact__form">
                 <div className="row">
                   <div className="col-12">

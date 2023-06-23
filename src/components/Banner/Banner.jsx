@@ -30,7 +30,64 @@ const Banner = () => {
   };
   const closeRequest = () => {
     setRequestStatus(false);
+
+    setErrorValue({ ...errorValue, formStatus: false });
   };
+
+  // Handeling Form Validation
+
+  const [subjectValue, setSubjectValue] = useState("");
+  const [phoneValue, setPhoneValue] = useState("");
+
+  const subjectChange = (e) => {
+    setSubjectValue(e.target.value);
+  };
+  const phoneChange = (e) => {
+    setPhoneValue(e.target.value);
+  };
+  const [errorValue, setErrorValue] = useState({
+    subjectError: false,
+    phoneError: false,
+    fromStatus: false,
+  });
+
+  const validateForm = (e) => {
+    const phoneNumberPattern = /^\d{10}$/;
+    e.preventDefault();
+
+    if (subjectValue.trim() === "") {
+      setErrorValue((prevErrorValue) => ({
+        ...prevErrorValue,
+        subjectError: true,
+      }));
+    } else {
+      setErrorValue((prevErrorValue) => ({
+        ...prevErrorValue,
+        subjectError: false,
+      }));
+    }
+    if (phoneValue.trim() === "") {
+      setErrorValue((prevErrorValue) => ({
+        ...prevErrorValue,
+        phoneError: true,
+      }));
+    } else if (!phoneNumberPattern.test(phoneValue)) {
+      setErrorValue((prevErrorValue) => ({
+        ...prevErrorValue,
+        phoneError: true,
+      }));
+    } else {
+      setErrorValue((prevErrorValue) => ({
+        ...prevErrorValue,
+        phoneError: false,
+        formStatus: true,
+      }));
+
+      setSubjectValue("");
+      setPhoneValue("");
+    }
+  };
+
   return (
     <>
       <div className="banner">
@@ -75,7 +132,18 @@ const Banner = () => {
         </div>
       </div>
 
-      <CallRequest active={requestStatus} close={closeRequest} />
+      <CallRequest
+        active={requestStatus}
+        close={closeRequest}
+        validateForm={validateForm}
+        errorValue={errorValue}
+        subjectValue={subjectValue}
+        phoneValue={phoneValue}
+        subjectChange={subjectChange}
+        phoneChange={phoneChange}
+        formStatus={errorValue.fromStatus}
+        subjectError={errorValue.subjectError}
+      />
     </>
   );
 };

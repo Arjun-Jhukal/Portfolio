@@ -4,7 +4,7 @@ import InputField from "./InputField";
 import Button from "./Button";
 
 import { AiOutlineClose } from "react-icons/ai";
-const CallRequest = ({ active, close }) => {
+const CallRequest = ({ active, close, validateForm, errorValue, subjectValue, phoneValue, subjectChange, phoneChange }) => {
   const [country, setCountry] = useState([]);
   const [selectedCountry, setSelectedCountry] = useState("Nepal");
 
@@ -33,26 +33,44 @@ const CallRequest = ({ active, close }) => {
     inputRef.current.focus();
   }, []);
 
-  // Handeling Form
-
   return (
     <div className={active ? "request active" : "request"}>
-      <form className="request__call">
-        <InputField placeholder={"Subject"} reference={inputRef} />
-        <div className="phone_number">
-          <select value={selectedCountry} onChange={(e) => setSelectedCountry(e.target.value)}>
-            {country &&
-              country.map((countryItem) => {
-                return (
-                  <option value={countryItem.name.common} key={countryItem.name.common}>
-                    {countryItem.name.common}
-                  </option>
-                );
-              })}
-          </select>
-          <InputField placeholder={"Phone Number"} />
-        </div>
-        <Button type={"submit"} value={"Request Now"} className={"btn btn__hire"} />
+      <form className="request__call" onSubmit={validateForm}>
+        {errorValue.formStatus ? (
+          <div className="successful__message">
+            <p>You Request has been successfully sent ! You will get a call back in next 24 hours</p>
+          </div>
+        ) : (
+          <>
+            <InputField
+              placeholder={"Subject"}
+              reference={inputRef}
+              className={errorValue.subjectError ? "error" : ""}
+              value={subjectValue}
+              onChange={subjectChange}
+            />
+
+            <div className="phone_number">
+              <select
+                value={selectedCountry}
+                onChange={(e) => {
+                  setSelectedCountry(e.target.value);
+                }}
+              >
+                {country &&
+                  country.map((countryItem) => {
+                    return (
+                      <option value={countryItem.name.common} key={countryItem.name.common}>
+                        {countryItem.name.common}
+                      </option>
+                    );
+                  })}
+              </select>
+              <InputField placeholder={"Phone Number"} className={errorValue.phoneError ? "error" : ""} value={phoneValue} onChange={phoneChange} />
+            </div>
+            <Button type={"submit"} value={"Request Now"} className={"btn btn__hire"} />
+          </>
+        )}
         <Button value={<AiOutlineClose size={20} />} className={"btn__close"} onClick={close} />
       </form>
     </div>

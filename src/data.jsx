@@ -23,7 +23,7 @@ import testimonial_04 from "./assets/img/testimonial/04.jpg";
 import testimonial_05 from "./assets/img/testimonial/05.jpg";
 import testimonial_06 from "./assets/img/testimonial/06.jpg";
 
-import blog_01 from "./assets/img/blog/01.jpg";
+import blog_01 from "./assets/img/profile/banner-03.png";
 import blog_02 from "./assets/img/blog/02.jpg";
 import blog_03 from "./assets/img/blog/03.jpg";
 import blog_04 from "./assets/img/blog/04.jpg";
@@ -135,8 +135,26 @@ export const BlogItems = [
   {
     id: 1,
     title: "About Me & My Journey",
-    description:
-      "I am Arjun Jhukal Frontend React Developer from Kathmandu Nepal. I have been working in this field since 2021. During my professional career i have contributed on over 30+ project ",
+    description: [
+      "I'm Arjun Jhukal born and raised in the beautiful town of Dadeldhura, Nepal. From a young age, I harbored a deep passion for education and technology, which eventually led me to pursue a career as a frontend developer. After completing my 10th grade in Dadeldhura, I took a leap of faith and moved to Dhangadi, Kailali, Nepal, in search of higher education opportunities.",
+      "In 2018, I successfully completed my studies and made the decision to continue my educational journey in Kathmandu, specializing in Computer Science and Information Technology. Little did I know that this new chapter of my life would bring about significant personal milestones as well.",
+      "At the tender age of 19, while embarking on my bachelor's degree, I entered the realm of marriage. It was a transformative experience, as it not only shaped my personal life but also ignited a deep sense of commitment and dedication within me. Supported by my loving partner, I began my professional journey by taking on a data entry position at Suga Inc., where I could combine my love for technology with my eagerness to excel.",
+
+      "During my time at Suga Inc., I eagerly embraced the opportunity to learn and grow. I took the initiative to delve into the realms of HTML, CSS, and JavaScript, laying the foundation for my frontend development skills. Driven by sheer determination and an unwavering work ethic, I honed my abilities and, astonishingly, within just one year of joining the company in 2022, I found myself creating captivating frontend layouts.",
+
+      "Presently, I am fortunate to continue my journey with Suga Inc., holding the same position and enjoying the same level of professional fulfillment. However, I have expanded my role by delving deeper into frontend development using the powerful trio of HTML, CSS, and JavaScript. Throughout my career, I have had the privilege to work on more than 20 projects, ranging from news portals and corporate websites to service-based platforms and e-commerce ventures.",
+
+      "Recently, I took a bold step forward by venturing into the world of React. This very portfolio you are currently exploring marks my debut project utilizing this innovative technology. Furthermore, I have successfully cloned YouTube, crafted an enticing e-commerce platform, and even developed a dynamic social media site with unlimited scrolling, all utilizing the power of React.",
+
+      "Looking ahead, my aspirations revolve around becoming an accomplished frontend developer, specializing in the remarkable framework of React. I am driven by an insatiable hunger for knowledge and a desire to continuously expand my skill set. With great enthusiasm, I am eager to explore additional frameworks and languages, such as Node.js and PostgreSQL, to elevate my proficiency and become a versatile full-stack developer.",
+      "Beyond the realms of web development, I find myself captivated by emerging technologies like machine learning and AI. Their immense potential to revolutionize the world inspires me to keep pushing boundaries and strive for excellence. By staying abreast of the latest advancements and continuously refining my expertise, I am determined to make significant contributions to the ever-evolving field of web development and emerge as a well-rounded professional.",
+
+      "my journey as a frontend developer has been shaped by my passion for technology, my unwavering dedication, and the support of my loved ones. The decision to get married at a young age has been a significant milestone in my life, providing me with a source of strength and motivation to pursue my dreams. As I navigate through new horizons, I am excited about the limitless opportunities that lie ahead, and I eagerly embrace the challenges that will further shape me into the accomplished professional I aspire to be.",
+    ],
+    author: "Arjun Jhukal",
+    authorMessage:
+      "I hope that, through this blog, you've found inspiration to pursue your dreams, embrace your true self, and navigate life's twists and turns with resilience and grace. Remember that we are all on our unique journeys, and it is through embracing our individuality that we can truly shine.",
+
     date: "2023-01-01",
     image: blog_01,
     like: 69,
@@ -144,8 +162,9 @@ export const BlogItems = [
   {
     id: 2,
     title: "Father's Day 2023: Celebrating Fatherhood and Honoring Dad's Unconditional Love",
-    description:
+    description: [
       "Experience the Joy of Father's Day: Celebrating Fatherhood and Honoring the Unbreakable Bond with Dad, filled with heartfelt stories, gift ideas, and activities to make this day truly memorable.",
+    ],
     intro: [
       "Father's Day is an occasion to recognize the contributions and sacrifices that fathers make for their families. It's a time to show affection and respect to fathers, spend quality time together, and make them feel special. People often give gifts, cards, or personalized items to their fathers, take them out for a meal or a special outing, or simply spend the day engaging in activities that their fathers enjoy.",
 
@@ -200,24 +219,6 @@ export const BlogItems = [
     author: "Arjun Jhukal",
     authorMessage:
       "On this Father's Day, we extend our deepest gratitude to all fathers, celebrating their unwavering love and guidance. May your day be filled with joy and appreciation for the remarkable impact you have on our lives.",
-  },
-  {
-    id: 3,
-    title: "Exploring the World of CSS: Styling Your Web Pages with Flair",
-    description:
-      "By focusing primarily on Japan, we are dedicated to empowering Nepali students to pursue educational opportunities in this dynamic country. Through our mission and vision, we aim to make a significant impact on the lives of students, fostering educational excellence, cultural understanding, and long-lasting connections between Nepal and Japan.",
-    date: "2023-01-01",
-    image: blog_03,
-    like: 69,
-  },
-  {
-    id: 4,
-    title: "Responsive Web Design: Building Websites for the Modern Age",
-    description:
-      "By focusing primarily on Japan, we are dedicated to empowering Nepali students to pursue educational opportunities in this dynamic country. Through our mission and vision, we aim to make a significant impact on the lives of students, fostering educational excellence, cultural understanding, and long-lasting connections between Nepal and Japan.",
-    date: "2023-01-01",
-    image: blog_02,
-    like: 69,
   },
 ];
 

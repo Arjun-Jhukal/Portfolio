@@ -9,54 +9,38 @@ import { BlogItems } from "../../data";
 import { useParams } from "react-router-dom";
 
 const BlogDetail = () => {
-  // const [blogData, setBlogData] = useState(null);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await fetch("");
-  //       const data = await response.json();
-
-  //       setBlogData(data);
-  //     } catch (err) {
-  //       console.log("Erro Fetching Blog Data");
-  //     }
-  //   };
-  // });
-  // console.log(blogData);
   const { id } = useParams();
-  const activityListArray = BlogItems[id].activities.list;
-  const wishListArray = BlogItems[id].wishes.list;
-
+  const currentItem = BlogItems[id];
+  const descriptionArray = currentItem.description;
   return (
-    <div className="blog">
+    <div className="blog section_gap">
       <div className="blog__image">
-        <img src={`${[BlogItems[id].image]}`} alt={`${[BlogItems[id].title]}`} />
+        <img src={`${[currentItem.image]}`} alt={`${[currentItem.title]}`} />
       </div>
       <div className="blog__header">
-        <h1 className="md_heading">{`${[BlogItems[id].title]}`}</h1>
+        <h1 className="md_heading">{`${[currentItem.title]}`}</h1>
         <ul className="blog__header__info">
           <li>
             <AiOutlineUser size={20} />
-            <span>{`${[BlogItems[id].author]}`}</span>
+            <span>{`${[currentItem.author]}`}</span>
           </li>
           <li>
             <AiOutlineHeart size={20} />
-            <span>{`${[BlogItems[id].like]}`}</span>
+            <span>{`${[currentItem.like]}`}</span>
           </li>
         </ul>
       </div>
 
-      <div className="blog__text">
-        <p>{`${[BlogItems[id].intro[0]]}`}</p>
+      {/* <div className="blog__text">
+        <p>{`${[currentItem.intro[0]]}`}</p>
 
-        <p>{`${[BlogItems[id].intro[1]]}`} </p>
+        <p>{`${[currentItem.intro[1]]}`} </p>
 
-        <img src={`${[BlogItems[id].image_01]}`} alt={`${[BlogItems[id].title]}`} />
+        <img src={`${[currentItem.image_01]}`} alt={`${[currentItem.title]}`} />
 
-        <em>{`${[BlogItems[id].em]}`}</em>
+        <em>{`${[currentItem.em]}`}</em>
 
-        <h4>{`${[BlogItems[id].activities.title]}`}</h4>
+        <h4>{`${[currentItem.activities.title]}`}</h4>
 
         <ul>
           {activityListArray.map((item, index) => {
@@ -64,13 +48,18 @@ const BlogDetail = () => {
           })}
         </ul>
 
-        <h4>{`${[BlogItems[id].wishes.title]}`}</h4>
+        <h4>{`${[currentItem.wishes.title]}`}</h4>
 
         <ul>
           {wishListArray.map((item, index) => {
             return <li key={index}>{item}</li>;
           })}
         </ul>
+      </div> */}
+      <div className="blog__text">
+        {descriptionArray.map((item, index) => {
+          return <p key={index}>{item}</p>;
+        })}
       </div>
 
       <div className="blog__author">
