@@ -4,6 +4,9 @@ import InputField from "../commonComponent/InputField";
 import Button from "../commonComponent/Button";
 import "../assets/scss/_form.scss";
 import Title from "../commonComponent/Title";
+import ContactBox from "../components/ContactBox/ContactBox";
+
+import { FaEnvelopeOpenText, FaPhone } from "react-icons/fa";
 const Contact = () => {
   const inputRef = useRef(null);
 
@@ -16,9 +19,13 @@ const Contact = () => {
 
       <section className="contact section_gap">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6 col-12 ">
-              <Title sub_title={"Reach Out To Me"} title={"Fill up the form and i will respond in next 24 hrs"} className={"flex-column"} />
+          <Title
+            sub_title={"Reach Out To Me"}
+            title={"Fill up the form and I will respond in next 24 hrs or contact me on the mentioned detail"}
+            className={"flex-column"}
+          />
+          <div className="row justify-content-between">
+            <div className="col-lg-6 col-12 order-lg-1 order-2">
               <form className="contact__form">
                 <div className="row">
                   <div className="col-12">
@@ -38,6 +45,10 @@ const Contact = () => {
                   </div>
                 </div>
               </form>
+            </div>
+            <div className="col-lg-5 col-12 order-lg-2 order-1">
+              <ContactBox icon={<FaPhone size={24} />} contactValue={"+977 9812767046"} />
+              <ContactBox icon={<FaEnvelopeOpenText size={24} />} contactValue={"connectjhukal@gmail.com"} />
             </div>
           </div>
         </div>

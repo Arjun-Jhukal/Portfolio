@@ -71,3 +71,15 @@
     margin-bottom: 50px;
   }
 }
+@media (max-width: 768px) {
+  .education {
+    border: none;
+
+    &__item {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

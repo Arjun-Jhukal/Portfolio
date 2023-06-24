@@ -5,13 +5,13 @@ const AboutBanner = () => {
   return (
     <div className="banner__02">
       <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-5 col-12">
+        <div className="row align-items-center justify-content-between">
+          <div className="col-lg-4 col-12">
             <div className="banner__02__image">
               <img src={aboutImage} alt="" />
             </div>
           </div>
-          <div className="col-lg-7 col-12">
+          <div className="col-lg-6 col-12">
             <div className="banner__02__text">
               <p>
                 I'm a Freelance UI/UX Designer and Developer based in London, England. I strives to build immersive and beautiful web applications

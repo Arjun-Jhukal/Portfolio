@@ -1,0 +1,13 @@
+.box {
+  padding: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  //   display: inline-block;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

@@ -72,7 +72,7 @@ const Navbar = () => {
                 );
               })}
             </ul>
-            <div className="d-lg-none">
+            <div className="d-md-none">
               <FaBars size={32} className="text-light" style={{ cursor: "pointer" }} onClick={toggleMobileMenu} />
             </div>
           </nav>

@@ -10,7 +10,7 @@ import skill_08 from "./assets/img/skills/wordpress-logo.png";
 import portfolio_01 from "./assets/img/portfolio/01.png";
 import portfolio_02 from "./assets/img/portfolio/02.png";
 import portfolio_03 from "./assets/img/portfolio/03.png";
-import portfolio_04 from "./assets/img/portfolio/04.png";
+import portfolio_04 from "./assets/img/portfolio/07.png";
 import portfolio_05 from "./assets/img/portfolio/05.png";
 import portfolio_06 from "./assets/img/portfolio/06.png";
 // import portfolio_07 from "./assets/img/portfolio/07.png";
@@ -24,8 +24,7 @@ import testimonial_05 from "./assets/img/testimonial/05.jpg";
 import testimonial_06 from "./assets/img/testimonial/06.jpg";
 
 import blog_01 from "./assets/img/profile/banner-03.png";
-import blog_02 from "./assets/img/blog/02.jpg";
-import blog_03 from "./assets/img/blog/03.jpg";
+
 import blog_04 from "./assets/img/blog/04.jpg";
 import blog_04_01 from "./assets/img/blog/05.jpg";
 
