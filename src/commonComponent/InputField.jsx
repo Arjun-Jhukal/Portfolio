@@ -12,6 +12,7 @@ const InputField = (props) => {
             readOnly={props.readOnly}
             ref={props.reference}
             className={props.className}
+            name={props.name}
           />
         </>
       );
@@ -27,6 +28,7 @@ const InputField = (props) => {
             ref={props.reference}
             placeholder={props.placeholder}
             onChange={props.onChange}
+            name={props.name}
           ></textarea>
         </>
       );
@@ -41,6 +43,7 @@ const InputField = (props) => {
             value={props.value}
             placeholder={props.placeholder}
             onChange={props.onChange}
+            name={props.name}
           />
         </>
       );

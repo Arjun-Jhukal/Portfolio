@@ -35,7 +35,7 @@ const CallRequest = ({ active, close, validateForm, errorValue, subjectValue, ph
 
   return (
     <div className={active ? "request active" : "request"}>
-      <form className="request__call" onSubmit={validateForm} netlify>
+      <form className="request__call" onSubmit={validateForm} method="POST" data-netlify="true">
         {errorValue.formStatus ? (
           <div className="successful__message">
             <p>You Request has been successfully sent ! You will get a call back in next 24 hours</p>
@@ -48,6 +48,7 @@ const CallRequest = ({ active, close, validateForm, errorValue, subjectValue, ph
               className={errorValue.subjectError ? "error" : ""}
               value={subjectValue}
               onChange={subjectChange}
+              name={"subject"}
             />
 
             <div className="phone_number">
@@ -66,7 +67,13 @@ const CallRequest = ({ active, close, validateForm, errorValue, subjectValue, ph
                     );
                   })}
               </select>
-              <InputField placeholder={"Phone Number"} className={errorValue.phoneError ? "error" : ""} value={phoneValue} onChange={phoneChange} />
+              <InputField
+                placeholder={"Phone Number"}
+                name={"phone"}
+                className={errorValue.phoneError ? "error" : ""}
+                value={phoneValue}
+                onChange={phoneChange}
+              />
             </div>
             <Button type={"submit"} value={"Request Now"} className={"btn btn__hire"} />
           </>
