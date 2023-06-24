@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import jsonData from "../data.json";
 const Privacy = () => {
@@ -11,8 +10,6 @@ const Privacy = () => {
           <h1 className="lg_heading mb-5">Privacy Policy</h1>
 
           {jsonData.map((item, index) => {
-            // const totalItem = item.title.length;
-            // console.log(totalItem);
             return (
               <div className="privacy__text" key={index}>
                 <p>Effective Date: {item.EffectiveDate} </p>
