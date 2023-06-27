@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar/Navbar";
-import jsonData from "../data.json";
+// import jsonData from "../data.json";
 const Privacy = () => {
   return (
     <main className="main">
@@ -9,7 +9,7 @@ const Privacy = () => {
         <div className="container">
           <h1 className="lg_heading mb-5">Privacy Policy</h1>
 
-          {jsonData.map((item, index) => {
+          {/* {jsonData.map((item, index) => {
             return (
               <div className="privacy__text" key={index}>
                 <p>Effective Date: {item.EffectiveDate} </p>
@@ -27,7 +27,7 @@ const Privacy = () => {
                 <p>{item.ending}</p>
               </div>
             );
-          })}
+          })} */}
         </div>
       </div>
     </main>

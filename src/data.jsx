@@ -28,6 +28,7 @@ import blog_01 from "./assets/img/profile/banner-03.png";
 import blog_04 from "./assets/img/blog/04.jpg";
 import blog_04_01 from "./assets/img/blog/05.jpg";
 
+export const reqMessage = [];
 export const NavbarItems = ["Home", "Porjects", "About", "Blog", "Contact", "Privacy"];
 
 export const skillItems = [

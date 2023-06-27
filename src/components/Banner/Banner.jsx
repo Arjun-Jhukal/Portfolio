@@ -6,6 +6,7 @@ import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
 import { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 import CallRequest from "../../commonComponent/CallRequest";
+import { reqMessage } from "../../data";
 const Banner = () => {
   const el = useRef(null);
 
@@ -77,6 +78,12 @@ const Banner = () => {
         phoneError: true,
       }));
     } else {
+      const requestingUser = {
+        reason: subjectValue,
+        contact: phoneValue,
+      };
+
+      reqMessage.push(requestingUser);
       setErrorValue((prevErrorValue) => ({
         ...prevErrorValue,
         phoneError: false,
