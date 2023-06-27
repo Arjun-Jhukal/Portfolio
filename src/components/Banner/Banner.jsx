@@ -1,5 +1,5 @@
 import "./_Banner.scss";
-// import Title from "../../commonComponent/Title";
+import { Link } from "react-router-dom";
 import cv from "../../assets/img/profile/cv.pdf";
 import bannerImage from "../../assets/img/profile/banner-03.png";
 import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
@@ -114,9 +114,16 @@ const Banner = () => {
                 </div>
 
                 <div className="banner__socials">
-                  <BsFacebook />
-                  <BsLinkedin />
-                  <BsGithub />
+                  <Link to={"https://www.facebook.com/profile.php?id=100070298795083"}>
+                    <BsFacebook />
+                  </Link>
+                  <Link to={"https://github.com/Arjun-Jhukal"}>
+                    {" "}
+                    <BsGithub />
+                  </Link>
+                  <Link to={"https://www.linkedin.com/in/arjun-jhukal/"}>
+                    <BsLinkedin />{" "}
+                  </Link>
                 </div>
               </div>
             </div>
