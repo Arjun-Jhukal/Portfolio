@@ -8,11 +8,6 @@ import ContactBox from "../components/ContactBox/ContactBox";
 
 import { FaEnvelopeOpenText, FaPhone } from "react-icons/fa";
 const Contact = () => {
-  const inputRef = useRef(null);
-
-  useEffect(() => {
-    inputRef.current.focus();
-  }, []);
   return (
     <main className="main">
       <section className="contact section_gap">
@@ -27,7 +22,7 @@ const Contact = () => {
               <form className="contact__form">
                 <div className="row">
                   <div className="col-12">
-                    <InputField fieldType={"input"} inputType={"text"} placeholder={"Eg. Arjun Jhukal"} label={"Name"} reference={inputRef} />
+                    <InputField fieldType={"input"} inputType={"text"} placeholder={"Eg. Arjun Jhukal"} label={"Name"} />
                   </div>
                   <div className="col-6">
                     <InputField label={"Phone Number"} fieldType={"input"} inputType={"text"} placeholder={"eg. +977 9812767046"} />

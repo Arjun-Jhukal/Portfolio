@@ -1,10 +1,10 @@
 import { TestimonialItems } from "../../data";
-import "./_Review.scss";
 
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import Slider from "react-slick";
+import "./_Review.scss";
+
 import Title from "../../commonComponent/Title";
 const Review = () => {
   // const PrevArrow = ({ onClick }) => (
@@ -22,13 +22,21 @@ const Review = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    arrows: false,
+    autoplay: true,
+    speed: 1300,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    arrows: false,
-    // prevArrow: <PrevArrow />,
-    // nextArrow: <NextArrow />,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (

@@ -75,9 +75,13 @@
 
 @media (min-width: 968px) {
   .banner__02 {
-    height: 100vh;
+    height: auto;
     display: grid;
     place-items: center;
+
+    .row {
+      margin-top: -40px;
+    }
   }
 }
 @media (max-width: 600px) {

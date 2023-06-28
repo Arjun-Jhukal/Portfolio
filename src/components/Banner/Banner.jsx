@@ -121,14 +121,14 @@ const Banner = () => {
                 </div>
 
                 <div className="banner__socials">
-                  <Link to={"https://www.facebook.com/profile.php?id=100070298795083"}>
+                  <Link to={"https://www.facebook.com/profile.php?id=100070298795083"} target="_blank">
                     <BsFacebook />
                   </Link>
-                  <Link to={"https://github.com/Arjun-Jhukal"}>
+                  <Link to={"https://github.com/Arjun-Jhukal"} target="_blank">
                     {" "}
                     <BsGithub />
                   </Link>
-                  <Link to={"https://www.linkedin.com/in/arjun-jhukal/"}>
+                  <Link to={"https://www.linkedin.com/in/arjun-jhukal/"} target="_blank">
                     <BsLinkedin />{" "}
                   </Link>
                 </div>
