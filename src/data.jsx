@@ -1,17 +1,17 @@
-import skill_01 from "./assets/img/skills/html-5.png";
+import skill_01 from "./assets/img/skills/html-5.webp";
 import skill_02 from "./assets/img/skills/css-3.png";
-import skill_03 from "./assets/img/skills/js.png";
+import skill_03 from "./assets/img/skills/js.webp";
 import skill_04 from "./assets/img/skills/bootstrap.png";
-import skill_05 from "./assets/img/skills/sass.png";
-import skill_06 from "./assets/img/skills/github.png";
+import skill_05 from "./assets/img/skills/sass.webp";
+import skill_06 from "./assets/img/skills/github.webp";
 import skill_07 from "./assets/img/skills/science.png";
 import skill_08 from "./assets/img/skills/wordpress-logo.png";
 
-import portfolio_01 from "./assets/img/portfolio/01.png";
-import portfolio_02 from "./assets/img/portfolio/02.png";
-import portfolio_03 from "./assets/img/portfolio/03.png";
-import portfolio_04 from "./assets/img/portfolio/04.png";
-import portfolio_05 from "./assets/img/portfolio/05.png";
+import portfolio_01 from "./assets/img/portfolio/01.webp";
+import portfolio_02 from "./assets/img/portfolio/02.webp";
+import portfolio_03 from "./assets/img/portfolio/03.webp";
+import portfolio_04 from "./assets/img/portfolio/04.webp";
+import portfolio_05 from "./assets/img/portfolio/05.webp";
 
 import testimonial_01 from "./assets/img/testimonial/01.jpg";
 import testimonial_02 from "./assets/img/testimonial/02.jpg";
@@ -22,8 +22,8 @@ import testimonial_06 from "./assets/img/testimonial/06.jpg";
 
 import blog_01 from "./assets/img/profile/banner-03.png";
 
-import blog_04 from "./assets/img/blog/04.jpg";
-import blog_04_01 from "./assets/img/blog/05.jpg";
+import blog_04 from "./assets/img/blog/04.webp";
+import blog_04_01 from "./assets/img/blog/05.webp";
 
 export const reqMessage = [];
 
