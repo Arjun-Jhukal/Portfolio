@@ -1,7 +1,7 @@
 import AboutBanner from "../components/AboutBanner/AboutBanner";
 import Education from "../components/Education/Education";
 import Experience from "../components/Experience/Experience";
-import ProjectPage from "./PortfolioPage";
+import ProjectPage from "../components/Portolio/Portfolio";
 import Skill from "../components/Skill/Skill";
 // import Cta from "../components/cta/Cta";
 

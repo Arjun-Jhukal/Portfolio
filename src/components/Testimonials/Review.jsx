@@ -23,7 +23,7 @@ const Review = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
@@ -32,7 +32,7 @@ const Review = () => {
   };
 
   return (
-    <section className="review section_gap" id="Review">
+    <section className="review " id="Review">
       <div className="container">
         <Title
           title={

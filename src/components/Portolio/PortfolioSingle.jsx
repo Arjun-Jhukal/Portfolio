@@ -13,9 +13,9 @@ const PortfolioSingle = (props) => {
         <p>{props.about}</p>
 
         <ul>
-          <li>React</li>
-          <li>SASS</li>
-          <li>Bootstrap</li>
+          {props.list.map((item, index) => {
+            return <li key={index}>{item}</li>;
+          })}
         </ul>
 
         <div className="portfolio__item__btns">

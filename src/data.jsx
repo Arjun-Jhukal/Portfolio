@@ -10,11 +10,8 @@ import skill_08 from "./assets/img/skills/wordpress-logo.png";
 import portfolio_01 from "./assets/img/portfolio/01.png";
 import portfolio_02 from "./assets/img/portfolio/02.png";
 import portfolio_03 from "./assets/img/portfolio/03.png";
-import portfolio_04 from "./assets/img/portfolio/07.png";
+import portfolio_04 from "./assets/img/portfolio/04.png";
 import portfolio_05 from "./assets/img/portfolio/05.png";
-import portfolio_06 from "./assets/img/portfolio/06.png";
-// import portfolio_07 from "./assets/img/portfolio/07.png";
-// import portfolio_08 from "./assets/img/portfolio/08.png";
 
 import testimonial_01 from "./assets/img/testimonial/01.jpg";
 import testimonial_02 from "./assets/img/testimonial/02.jpg";
@@ -226,37 +223,37 @@ export const BlogItems = [
 export const PortfolioItems = [
   {
     id: 1,
-    title: "Tour and Travel Agency",
+    title: "Cleaning Service",
     status: "cloned",
     image: portfolio_01,
-    tools: ["HTML", "CSS", "Javascript", "Bootstrap", "Slick", "SCSS"],
+    tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
     about:
-      " I created a captivating website for a tour and travel agency. The website showcases stunning destinations, enticing itineraries, and convenient booking options to engage potential travelers. With a clean and intuitive user interface, smooth navigation, and responsive design, the website ensures an enjoyable browsing experience across various devices. I incorporated eye-catching visuals, enticing content, and interactive elements to captivate visitors and encourage them to explore the agency's offerings. The portfolio project demonstrates my expertise in frontend development and my ability to create visually appealing and user-friendly websites for the travel industry.",
+      " I created a captivating website for a Cleaning Service. The website showcases stunning destinations, enticing itineraries, and convenient booking options to engage potential travelers. With a clean and intuitive user interface, smooth navigation, and responsive design, the website ensures an enjoyable browsing experience across various devices. I incorporated eye-catching visuals, enticing content, and interactive elements to captivate visitors and encourage them to explore the agency's offerings. The portfolio project demonstrates my expertise in frontend development and my ability to create visually appealing and user-friendly websites for the travel industry.",
   },
   {
     id: 2,
-    title: "Accounting Firm",
+    title: "News Portal",
     status: "Designed and Developed",
     image: portfolio_02,
-    tools: ["HTML", "CSS", "Javascript", "Bootstrap", "Slick", "SCSS"],
+    tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
     about:
       "The website boasts a sleek and modern interface, reflecting the firm's reliability and expertise in the financial industry. With a user-friendly layout, intuitive navigation, and responsive design, the website ensures seamless browsing on different devices. I focused on creating a visually appealing and easy-to-understand presentation of the firm's services, expertise, and client testimonials. Through the use of clean typography, professional color schemes, and well-organized content, I aimed to establish a sense of trust and credibility with potential clients.",
   },
   {
     id: 3,
-    title: "Facility Management Agency",
+    title: "PTE Voucher Booking",
     status: "Cloned",
     image: portfolio_03,
-    tools: ["HTML", "CSS", "Javascript", "Bootstrap", "Slick", "SCSS", "React"],
+    tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
     about:
       "The website features a modern and professional design, reflecting the agency's commitment to delivering top-notch services. With a user-centric approach, intuitive navigation, and responsive layout, the website ensures a seamless browsing experience across various devices. I emphasized the agency's comprehensive range of facility management solutions, highlighting key features and benefits. Through visually appealing graphics, interactive elements, and engaging content, I aimed to captivate visitors and showcase the agency's expertise in optimizing facility operations. This portfolio project demonstrates my proficiency in frontend development and my ability to create visually striking and user-friendly websites for facility management agencies.",
   },
   {
     id: 4,
-    title: "News Portal",
+    title: "School Website",
     status: "Desinged & Developed",
     image: portfolio_04,
-    tools: ["HTML", "CSS", "Javascript", "Bootstrap", "Slick", "SCSS", "React"],
+    tools: ["HTML", "CSS", "Javascript", "Bootstrap", "React"],
     about:
       " With a user-friendly layout, intuitive navigation, and responsive design, the website ensures seamless access to the latest news across devices. I focused on creating an engaging homepage that highlights breaking news, featured articles, and diverse categories. Through a visually appealing presentation, captivating headlines, and well-structured content, I aimed to keep users informed and interested in exploring different news topics.",
   },
@@ -265,17 +262,9 @@ export const PortfolioItems = [
     title: "E-commerce",
     status: "Designed and Developed",
     image: portfolio_05,
-    tools: ["HTML", "CSS", "Javascript", "Bootstrap", "Slick", "SCSS", "React"],
+    tools: ["HTML", "CSS", "Bootstrap", "JavaScript"],
     about:
       " I focused on showcasing products with captivating visuals, detailed descriptions, and convenient filtering and sorting options to help users find exactly what they need. By emphasizing a seamless and straightforward checkout process, I aimed to enhance user satisfaction and encourage successful purchases. ",
-  },
-  {
-    id: 6,
-    title: "others",
-    image: portfolio_06,
-    tools: ["HTML", "CSS", "Javascript", "Bootstrap", "Slick", "SCSS", "React"],
-    about:
-      "By focusing primarily on Japan, we are dedicated to empowering Nepali students to pursue educational opportunities in this dynamic country. Through our mission and vision, we aim to make a significant impact on the lives of students, fostering educational excellence, cultural understanding, and long-lasting connections between Nepal and Japan.",
   },
 ];
 
