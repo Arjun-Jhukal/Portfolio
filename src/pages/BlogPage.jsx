@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 const BlogPage = () => {
   return (
     <main className="main">
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Blog />
       {/* <Footer /> */}

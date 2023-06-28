@@ -19,17 +19,17 @@ const Portfolio = (props) => {
         <div className="row justify-content-center ">
           {PortfolioItems.slice(0, numberOfItem).map((item, index) => {
             return (
-              <div className="col-lg-9 col-12 " key={index}>
+              <div className=" col-12 " key={index}>
                 <PortfolioSingle image={item.image} title={item.title} about={item.about} />
               </div>
             );
           })}
         </div>
-        <div className="portfolio__btn text-center">
+        {/* <div className="portfolio__btn text-center">
           <Link to={"/portfolio"} className="btn btn__view__all">
             View All Project
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

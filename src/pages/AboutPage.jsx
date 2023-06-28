@@ -1,7 +1,7 @@
 import AboutBanner from "../components/AboutBanner/AboutBanner";
 import Education from "../components/Education/Education";
 import Experience from "../components/Experience/Experience";
-import Navbar from "../components/Navbar/Navbar";
+import ProjectPage from "./PortfolioPage";
 import Skill from "../components/Skill/Skill";
 // import Cta from "../components/cta/Cta";
 
@@ -10,10 +10,9 @@ import { Auxilary } from "../hoc/Auxilary";
 const AboutPage = () => {
   return (
     <Auxilary>
-      <Navbar />
       <AboutBanner />
-
-      <div className="container section_gap">
+      <ProjectPage />
+      <div className="container ">
         <div className="row">
           <div className="col-lg-6 col-12">
             <Education />

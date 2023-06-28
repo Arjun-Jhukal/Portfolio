@@ -1,5 +1,8 @@
 @import "../../assets/scss/variables";
 .banner__02 {
+  .row {
+    margin-top: -40px;
+  }
   &__image {
     width: 450px;
     height: 450px;

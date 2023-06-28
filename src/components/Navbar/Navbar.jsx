@@ -63,7 +63,7 @@ const Navbar = () => {
                       onClick={() => {
                         toggleActive(item);
                       }}
-                      to={`/${item}`}
+                      to={`/`}
                       className={active === item ? "active nav__link" : "nav__link"}
                     >
                       {item}

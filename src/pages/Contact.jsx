@@ -15,8 +15,6 @@ const Contact = () => {
   }, []);
   return (
     <main className="main">
-      <Navbar />
-
       <section className="contact section_gap">
         <div className="container">
           <Title

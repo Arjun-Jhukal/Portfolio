@@ -2,14 +2,14 @@ import "./_Blog.scss";
 import { Link } from "react-router-dom";
 import { BsFillCalendarDayFill } from "react-icons/bs";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
-
+import Title from "../../commonComponent/Title";
 import { BlogItems } from "../../data";
-import Pagination from "../Pagination/Pagination";
 
 const Blog = () => {
   return (
-    <section className="blog section_gap">
+    <section className="blog">
       <div className="container">
+        <Title title={" My Thoughts about whats going around"} className={"flex-column "} sub_title={"Blogs"} />
         <div className="row">
           {BlogItems.map((item, index) => {
             return (
@@ -40,7 +40,6 @@ const Blog = () => {
             );
           })}
         </div>
-        <Pagination />
       </div>
     </section>
   );

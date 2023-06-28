@@ -1,10 +1,11 @@
 import aboutImage from "../../assets/img/profile/banner-02.png";
-
+import Title from "../../commonComponent/Title";
 import "./_aboutBanner.scss";
 const AboutBanner = () => {
   return (
     <div className="banner__02">
       <div className="container">
+        <Title title={"About Me and My Journey"} className={"flex-column "} sub_title={"About Me"} />
         <div className="row align-items-center justify-content-between">
           <div className="col-lg-4 col-12">
             <div className="banner__02__image">
