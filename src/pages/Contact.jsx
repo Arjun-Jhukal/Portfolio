@@ -10,7 +10,7 @@ import { FaEnvelopeOpenText, FaPhone } from "react-icons/fa";
 const Contact = () => {
   return (
     <main className="main">
-      <section className="contact section_gap">
+      <section className="contact section_gap" id="contact">
         <div className="container">
           <Title
             sub_title={"Reach Out To Me"}

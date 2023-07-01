@@ -12,7 +12,7 @@ const AboutPage = () => {
     <Auxilary>
       <AboutBanner />
       <ProjectPage />
-      <div className="container ">
+      <div className="container " id="experience">
         <div className="row">
           <div className="col-lg-6 col-12">
             <Education />

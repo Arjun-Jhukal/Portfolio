@@ -5,7 +5,7 @@ import Title from "../../commonComponent/Title";
 
 const Skill = () => {
   return (
-    <section className="skill " id="Skills">
+    <section className="skill " id="skills">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-12">

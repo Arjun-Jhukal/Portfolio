@@ -27,7 +27,36 @@ import blog_04_01 from "./assets/img/blog/05.webp";
 
 export const reqMessage = [];
 
-export const NavbarItems = ["Home", "About", "Porjects", "Blog", "Contact"];
+export const NavbarItems = [
+  {
+    item: "Home",
+    link: "/",
+  },
+  {
+    item: "About",
+    link: "#about",
+  },
+  {
+    item: "Projects",
+    link: "#projects",
+  },
+  {
+    item: "Experience",
+    link: "#experience",
+  },
+  {
+    item: "Skills",
+    link: "#skills",
+  },
+  {
+    item: "Review",
+    link: "#review",
+  },
+  {
+    item: "Contact",
+    link: "#contact",
+  },
+];
 
 export const skillItems = [
   {

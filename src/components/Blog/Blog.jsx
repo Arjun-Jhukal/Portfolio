@@ -7,7 +7,7 @@ import { BlogItems } from "../../data";
 
 const Blog = () => {
   return (
-    <section className="blog pt-80">
+    <section className="blog pt-80" id="blog">
       <div className="container">
         <Title title={" My Thoughts about whats going around"} className={"flex-column "} sub_title={"Blogs"} />
         <div className="row">

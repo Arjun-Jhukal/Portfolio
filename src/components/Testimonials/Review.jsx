@@ -40,7 +40,7 @@ const Review = () => {
   };
 
   return (
-    <section className="review " id="Review">
+    <section className="review " id="review">
       <div className="container">
         <Title
           title={

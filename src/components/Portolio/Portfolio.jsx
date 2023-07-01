@@ -6,7 +6,7 @@ import { PortfolioItems } from "../../data";
 import "./_Portfolio.scss";
 const Portfolio = () => {
   return (
-    <section className="portfolio section_gap" id="Portfolio">
+    <section className="portfolio section_gap" id="projects">
       <div className="container">
         <Title
           title={"Each piece represents my passion, dedication, and expertise in frontend Development"}

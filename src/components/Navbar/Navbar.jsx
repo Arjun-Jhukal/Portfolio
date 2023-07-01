@@ -56,18 +56,19 @@ const Navbar = () => {
           </div>
           <nav className="nav">
             <ul className={showMenu.show ? "nav__items active" : "nav__items"}>
-              {NavbarItems.map((item, index) => {
+              {NavbarItems.map((navitem, index) => {
                 return (
                   <li key={index}>
-                    <Link
+                    <a
+                      href={navitem.link}
                       onClick={() => {
-                        toggleActive(item);
+                        toggleActive(navitem.item);
                       }}
-                      to={`/`}
-                      className={active === item ? "active nav__link" : "nav__link"}
+                      // to={navitem.link}
+                      className={active === navitem.item ? "active nav__link" : "nav__link"}
                     >
-                      {item}
-                    </Link>
+                      {navitem.item}
+                    </a>
                   </li>
                 );
               })}

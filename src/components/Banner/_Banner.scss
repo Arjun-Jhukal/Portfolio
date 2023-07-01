@@ -96,7 +96,7 @@
       position: initial;
       width: 350px;
       height: 350px;
-      margin: 0 auto;
+      // margin: auto;
 
       img {
         object-fit: cover;
@@ -119,6 +119,10 @@
 
 @media (max-width: 600px) {
   .banner {
+    padding: 30px 0;
+    .image__box {
+      display: none;
+    }
     h2 {
       font-size: 2em;
 
