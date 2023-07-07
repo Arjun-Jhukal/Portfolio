@@ -3,7 +3,7 @@ import Title from "../../commonComponent/Title";
 import "./_aboutBanner.scss";
 const AboutBanner = () => {
   return (
-    <div className="banner__02 " id="about">
+    <section className="banner__02 pt-80" id="about">
       <div className="container">
         <Title title={"About Me and My Journey"} className={"flex-column "} sub_title={"About Me"} />
         <div className="row align-items-center justify-content-between">
@@ -75,7 +75,7 @@ const AboutBanner = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

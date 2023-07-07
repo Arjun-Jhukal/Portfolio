@@ -9,5 +9,9 @@
     padding: 15px;
     background-color: $primary_color;
     margin-bottom: 15px;
+
+    &:hover {
+      transform: rotate(360deg);
+    }
   }
 }

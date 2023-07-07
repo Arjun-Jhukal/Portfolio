@@ -7,31 +7,27 @@ import "./_Review.scss";
 
 import Title from "../../commonComponent/Title";
 const Review = () => {
-  // const PrevArrow = ({ onClick }) => (
-  //   <button className="slick-arrow slick-prev" onClick={onClick}>
-  //     <FaAngleLeft />
-  //   </button>
-  // );
-
-  // const NextArrow = ({ onClick }) => (
-  //   <button className="slick-arrow slick-next" onClick={onClick}>
-  //     <FaAngleRight />
-  //   </button>
-  // );
-
   const settings = {
-    dots: true,
     infinite: true,
-    arrows: false,
-    autoplay: true,
-    speed: 1300,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+
     responsive: [
       {
         breakpoint: 600,
         settings: {
-          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
         },
@@ -40,7 +36,7 @@ const Review = () => {
   };
 
   return (
-    <section className="review " id="review">
+    <section className="testimonial " id="review">
       <div className="container">
         <Title
           title={
@@ -50,22 +46,24 @@ const Review = () => {
           sub_title={"Clients Speak About My Work"}
           headingColor={"white"}
         />
-        <Slider className=" justify-content-between" {...settings}>
+        <Slider className="row testi_slider justify-content-between" {...settings}>
           {TestimonialItems.map((item, index) => {
             return (
-              <div key={index}>
-                <div className="review__item">
-                  <div className="review__item__image">
-                    <img src={item.image} alt={`${item.name} `} />
+              <div className="col-lg-4 col-md-6 col-sm-12" key={index}>
+                <div className="testi_item">
+                  <div className="testi_item_content">
+                    <div className="message">
+                      <p>{item.message}</p>
+                    </div>
                   </div>
-                  <div className="review__text">
-                    <div className="review__text__header">
-                      <h1 className="sm_heading">{item.name}</h1>
+                  <div className="client">
+                    <div className="profile">
+                      <img src={item.image} alt={item.name} />
+                    </div>
+                    <div className="client__about">
+                      <h5>{item.name}</h5>
                       <span>{item.company}</span>
                       <span>{item.post}</span>
-                    </div>
-                    <div className="review__text__message">
-                      <p>{item.message}</p>
                     </div>
                   </div>
                 </div>

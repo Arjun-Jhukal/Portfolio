@@ -39,6 +39,12 @@ const Banner = () => {
 
   const [subjectValue, setSubjectValue] = useState("");
   const [phoneValue, setPhoneValue] = useState("");
+  const [requestingUser, setRequestingUser] = useState({
+    subject: "",
+    number: "",
+  });
+
+  console.log(requestingUser);
 
   const subjectChange = (e) => {
     setSubjectValue(e.target.value);
@@ -78,12 +84,12 @@ const Banner = () => {
         phoneError: true,
       }));
     } else {
-      const requestingUser = {
-        reason: subjectValue,
-        contact: phoneValue,
-      };
+      setRequestingUser({
+        ...requestingUser,
+        subject: subjectValue,
+        phone: phoneValue,
+      });
 
-      reqMessage.push(requestingUser);
       setErrorValue((prevErrorValue) => ({
         ...prevErrorValue,
         phoneError: false,
@@ -95,9 +101,13 @@ const Banner = () => {
     }
   };
 
+  useEffect(() => {
+    localStorage.setItem("Requesting Clients", JSON.stringify(requestingUser));
+  }, [requestingUser]);
+
   return (
     <>
-      <div className="banner">
+      <section className="banner">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 col-12 order-lg-1 order-2">
@@ -144,7 +154,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <CallRequest
         active={requestStatus}

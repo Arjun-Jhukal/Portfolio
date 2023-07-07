@@ -257,7 +257,7 @@ export const PortfolioItems = [
     image: portfolio_01,
     tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
     about:
-      " I created a captivating website for a Cleaning Service. The website showcases stunning destinations, enticing itineraries, and convenient booking options to engage potential travelers. With a clean and intuitive user interface, smooth navigation, and responsive design, the website ensures an enjoyable browsing experience across various devices. I incorporated eye-catching visuals, enticing content, and interactive elements to captivate visitors and encourage them to explore the agency's offerings. The portfolio project demonstrates my expertise in frontend development and my ability to create visually appealing and user-friendly websites for the travel industry.",
+      " A visually captivating website showcasing stunning destinations, enticing itineraries, and convenient booking options for a cleaning service, with a clean and intuitive user interface, responsive design, and smooth navigation.",
   },
   {
     id: 2,
@@ -266,7 +266,7 @@ export const PortfolioItems = [
     image: portfolio_02,
     tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
     about:
-      "The website boasts a sleek and modern interface, reflecting the firm's reliability and expertise in the financial industry. With a user-friendly layout, intuitive navigation, and responsive design, the website ensures seamless browsing on different devices. I focused on creating a visually appealing and easy-to-understand presentation of the firm's services, expertise, and client testimonials. Through the use of clean typography, professional color schemes, and well-organized content, I aimed to establish a sense of trust and credibility with potential clients.",
+      "A sleek and modern news portal website with a user-friendly layout, intuitive navigation, and responsive design, reflecting reliability and expertise in the financial industry, and featuring professional content presentation, client testimonials, and a sense of trust.",
   },
   {
     id: 3,
@@ -275,7 +275,7 @@ export const PortfolioItems = [
     image: portfolio_03,
     tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
     about:
-      "The website features a modern and professional design, reflecting the agency's commitment to delivering top-notch services. With a user-centric approach, intuitive navigation, and responsive layout, the website ensures a seamless browsing experience across various devices. I emphasized the agency's comprehensive range of facility management solutions, highlighting key features and benefits. Through visually appealing graphics, interactive elements, and engaging content, I aimed to captivate visitors and showcase the agency's expertise in optimizing facility operations. This portfolio project demonstrates my proficiency in frontend development and my ability to create visually striking and user-friendly websites for facility management agencies.",
+      "A modern and professional website for booking PTE vouchers, offering a comprehensive range of facility management solutions, highlighted through visually appealing graphics, interactive elements, and engaging content, demonstrating expertise in optimizing facility operations.",
   },
   {
     id: 4,
@@ -284,7 +284,7 @@ export const PortfolioItems = [
     image: portfolio_04,
     tools: ["HTML", "CSS", "Javascript", "Bootstrap", "React"],
     about:
-      " With a user-friendly layout, intuitive navigation, and responsive design, the website ensures seamless access to the latest news across devices. I focused on creating an engaging homepage that highlights breaking news, featured articles, and diverse categories. Through a visually appealing presentation, captivating headlines, and well-structured content, I aimed to keep users informed and interested in exploring different news topics.",
+      "A responsive website for a school, built using HTML, CSS, JavaScript, Bootstrap, and React, providing information about the school, its programs, and activities, with a user-centric approach, intuitive navigation, and visually appealing design.",
   },
   {
     id: 5,
@@ -293,7 +293,7 @@ export const PortfolioItems = [
     image: portfolio_05,
     tools: ["HTML", "CSS", "Bootstrap", "JavaScript"],
     about:
-      " I focused on showcasing products with captivating visuals, detailed descriptions, and convenient filtering and sorting options to help users find exactly what they need. By emphasizing a seamless and straightforward checkout process, I aimed to enhance user satisfaction and encourage successful purchases. ",
+      "An e-commerce website with a focus on HTML, CSS, Bootstrap, and JavaScript, providing an online platform for buying and selling products, featuring a clean and responsive design, optimized for a seamless shopping experience.",
   },
 ];
 
