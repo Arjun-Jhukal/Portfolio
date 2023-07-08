@@ -57,6 +57,7 @@ const CallRequest = ({ active, close, validateForm, errorValue, subjectValue, ph
                 onChange={(e) => {
                   setSelectedCountry(e.target.value);
                 }}
+                name="country"
               >
                 {country &&
                   country.map((countryItem) => {
