@@ -35,7 +35,7 @@ const CallRequest = ({ active, close, validateForm, errorValue, subjectValue, ph
 
   return (
     <div className={active ? "request active" : "request"}>
-      <form className="request__call" onSubmit={validateForm} method="POST" data-netlify="true">
+      <form className="request__call" name="call__request" onSubmit={validateForm} method="POST" data-netlify="true">
         {errorValue.formStatus ? (
           <div className="successful__message">
             <p>You Request has been successfully sent ! You will get a call back in next 24 hours</p>

@@ -16,7 +16,7 @@ const Contact = () => {
         />
         <div className="row justify-content-between">
           <div className="col-lg-6 col-12 order-lg-1 order-2">
-            <form className="contact__form" method="POST" data-netlify={true}>
+            <form className="contact__form" name="contact" method="POST" data-netlify={true} onSubmit={"submit"}>
               <input type="hidden" name="subject" value="New lead from %{formName} (%{submissionId})" />
               <div className="row">
                 <div className="col-12">
