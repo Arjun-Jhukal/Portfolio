@@ -17,7 +17,7 @@ const Contact = () => {
         <div className="row justify-content-between">
           <div className="col-lg-6 col-12 order-lg-1 order-2">
             <form className="contact__form" name="contact" method="POST" action="/" data-netlify={true} onSubmit={"submit"}>
-              <input type="hidden" name="subject" value="New lead from %{contact} " />
+              <input type="hidden" name="subject" value="contact" />
               <div className="row">
                 <div className="col-12">
                   <InputField fieldType={"input"} name={"name"} inputType={"text"} placeholder={"Eg. Arjun Jhukal"} label={"Name"} />
