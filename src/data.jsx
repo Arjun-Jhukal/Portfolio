@@ -12,6 +12,7 @@ import portfolio_02 from "./assets/img/portfolio/02.webp";
 import portfolio_03 from "./assets/img/portfolio/03.webp";
 import portfolio_04 from "./assets/img/portfolio/04.webp";
 import portfolio_05 from "./assets/img/portfolio/05.webp";
+import portfolio_06 from "./assets/img/portfolio/06.webp";
 
 import testimonial_01 from "./assets/img/testimonial/01.jpg";
 import testimonial_02 from "./assets/img/testimonial/02.jpg";
@@ -294,6 +295,16 @@ export const PortfolioItems = [
     tools: ["HTML", "CSS", "Bootstrap", "JavaScript"],
     about:
       "An e-commerce website with a focus on HTML, CSS, Bootstrap, and JavaScript, providing an online platform for buying and selling products, featuring a clean and responsive design, optimized for a seamless shopping experience.",
+  },
+  {
+    id: 6,
+    title: "E-Library",
+    status: "Designed and Developed",
+    image: portfolio_06,
+    tools: ["HTML", "CSS", "Bootstrap", "React"],
+    about:
+      "E-library is a project developed to fulfill the internship requirement for a college degree based on React. The library can earn money from subscription as we have two subscription plan and from donations",
+    code: "https://github.com/Arjun-Jhukal/eLibrary",
   },
 ];
 

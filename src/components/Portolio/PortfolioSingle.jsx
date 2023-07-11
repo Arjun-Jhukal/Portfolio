@@ -1,5 +1,6 @@
 import { AiOutlineGithub } from "react-icons/ai";
 import { BsBoxArrowUpRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const PortfolioSingle = (props) => {
   return (
@@ -19,14 +20,14 @@ const PortfolioSingle = (props) => {
         </ul>
 
         <div className="portfolio__item__btns">
-          <div className="btn btn__github">
+          <Link to={props.code} className="btn btn__github">
             <span>Source Code</span>
             <AiOutlineGithub size={20} />
-          </div>
-          <div className="btn btn__github">
+          </Link>
+          <Link to={"#"} className="btn btn__github">
             <span>Live Site</span>
             <BsBoxArrowUpRight size={16} />
-          </div>
+          </Link>
         </div>
       </div>
     </div>
