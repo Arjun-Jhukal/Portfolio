@@ -9,9 +9,60 @@
     padding: 15px;
     background-color: $primary_color;
     margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    @include transition(0.3s);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $text_color;
+      @include transition(1s);
+      transition: top 1s, left 1s;
+      opacity: 0;
+      visibility: hidden;
+    }
 
     &:hover {
-      transform: rotate(360deg);
+      border-color: $text_color;
+      &::before {
+        opacity: 1;
+        visibility: visible;
+        animation: circleBox 1.5s linear infinite;
+      }
+    }
+  }
+
+  @keyframes circleBox {
+    0% {
+      top: -5px;
+      left: -5px;
+    }
+    25% {
+      top: calc(100% - 5px);
+      left: -5px;
+    }
+    50% {
+      top: calc(100% - 5px);
+      left: calc(100% - 5px);
+      right: -5px;
+      bottom: -5px;
+    }
+    75% {
+      top: -5px;
+      right: -5px;
+      left: calc(100% - 5px);
+      bottom: calc(100% - 5px);
+    }
+    100% {
+      top: -5px;
+      left: -5px;
     }
   }
 }

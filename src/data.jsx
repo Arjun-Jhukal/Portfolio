@@ -312,7 +312,7 @@ export const PortfolioItems = [
     tools: ["HTML", "CSS", "Bootstrap", "React"],
     about:
       "E-library is a project developed to fulfill the internship requirement for a college degree based on React. The library can earn money from subscription as we have two subscription plan and from donations",
-    code: "#",
+    code: "https://github.com/Arjun-Jhukal/eLibrary",
     live: "#",
   },
 ];

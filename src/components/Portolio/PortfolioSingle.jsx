@@ -20,11 +20,11 @@ const PortfolioSingle = (props) => {
         </ul>
 
         <div className="portfolio__item__btns">
-          <Link to={props.code} className="btn btn__github">
+          <Link to={props.code} target="_blank" className="btn btn__github">
             <span>Source Code</span>
             <AiOutlineGithub size={20} />
           </Link>
-          <Link to={props.live} className="btn btn__github">
+          <Link to={props.live} target="_blank" className="btn btn__github">
             <span>Live Site</span>
             <BsBoxArrowUpRight size={16} />
           </Link>
