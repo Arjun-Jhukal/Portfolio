@@ -24,7 +24,7 @@ const PortfolioSingle = (props) => {
             <span>Source Code</span>
             <AiOutlineGithub size={20} />
           </Link>
-          <Link to={"#"} className="btn btn__github">
+          <Link to={props.live} className="btn btn__github">
             <span>Live Site</span>
             <BsBoxArrowUpRight size={16} />
           </Link>

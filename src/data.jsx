@@ -26,8 +26,6 @@ import blog_01 from "./assets/img/profile/banner-03.png";
 import blog_04 from "./assets/img/blog/04.webp";
 import blog_04_01 from "./assets/img/blog/05.webp";
 
-export const reqMessage = [];
-
 export const NavbarItems = [
   {
     item: "Home",
@@ -259,6 +257,8 @@ export const PortfolioItems = [
     tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
     about:
       " A visually captivating website showcasing stunning destinations, enticing itineraries, and convenient booking options for a cleaning service, with a clean and intuitive user interface, responsive design, and smooth navigation.",
+    code: "#",
+    live: "https://alarwafms.com/",
   },
   {
     id: 2,
@@ -268,6 +268,8 @@ export const PortfolioItems = [
     tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
     about:
       "A sleek and modern news portal website with a user-friendly layout, intuitive navigation, and responsive design, reflecting reliability and expertise in the financial industry, and featuring professional content presentation, client testimonials, and a sense of trust.",
+    code: "#",
+    live: "#",
   },
   {
     id: 3,
@@ -277,6 +279,8 @@ export const PortfolioItems = [
     tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
     about:
       "A modern and professional website for booking PTE vouchers, offering a comprehensive range of facility management solutions, highlighted through visually appealing graphics, interactive elements, and engaging content, demonstrating expertise in optimizing facility operations.",
+    code: "#",
+    live: "https://ptebookingnepal.com/",
   },
   {
     id: 4,
@@ -286,6 +290,8 @@ export const PortfolioItems = [
     tools: ["HTML", "CSS", "Javascript", "Bootstrap", "React"],
     about:
       "A responsive website for a school, built using HTML, CSS, JavaScript, Bootstrap, and React, providing information about the school, its programs, and activities, with a user-centric approach, intuitive navigation, and visually appealing design.",
+    code: "#",
+    live: "#",
   },
   {
     id: 5,
@@ -295,6 +301,8 @@ export const PortfolioItems = [
     tools: ["HTML", "CSS", "Bootstrap", "JavaScript"],
     about:
       "An e-commerce website with a focus on HTML, CSS, Bootstrap, and JavaScript, providing an online platform for buying and selling products, featuring a clean and responsive design, optimized for a seamless shopping experience.",
+    code: "#",
+    live: "#",
   },
   {
     id: 6,
@@ -304,7 +312,8 @@ export const PortfolioItems = [
     tools: ["HTML", "CSS", "Bootstrap", "React"],
     about:
       "E-library is a project developed to fulfill the internship requirement for a college degree based on React. The library can earn money from subscription as we have two subscription plan and from donations",
-    code: "https://github.com/Arjun-Jhukal/eLibrary",
+    code: "#",
+    live: "#",
   },
 ];
 

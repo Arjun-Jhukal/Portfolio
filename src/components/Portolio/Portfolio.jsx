@@ -17,7 +17,7 @@ const Portfolio = () => {
           {PortfolioItems.map((item, index) => {
             return (
               <div className=" col-12 " key={index}>
-                <PortfolioSingle image={item.image} title={item.title} about={item.about} list={item.tools} code={item.code} />
+                <PortfolioSingle image={item.image} title={item.title} about={item.about} list={item.tools} code={item.code} live={item.live} />
               </div>
             );
           })}
