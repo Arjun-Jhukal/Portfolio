@@ -53,6 +53,17 @@
           </svg>
         </button>
       </form>
+
+      <form class="contact__form" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="subject" value="contact" />
+        <div class="row">
+          <div class="col-12"><label> Name</label><input type="text" placeholder="Eg. Arjun Jhukal" name="name" value="" /></div>
+          <div class="col-6"><label> Phone Number</label><input type="text" placeholder="eg. +977 9812767046" name="phone" value="" /></div>
+          <div class="col-6"><label> Email</label><input type="text" placeholder="eg. jhukal9@gamil.com" name="email" value="" /></div>
+          <div class="col-12"><label> Message</label><textarea cols="30" rows="7" placeholder="Describe Purpose..." name="message"></textarea></div>
+          <div class="col-12"><button type="submit" class="btn btn__github">Submit</button></div>
+        </div>
+      </form>
     </div>
     <script type="module" src="/src/main.jsx"></script>
     <script src="https://kit.fontawesome.com/22fb8f768d.js" crossorigin="anonymous"></script>
