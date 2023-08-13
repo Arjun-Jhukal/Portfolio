@@ -6,6 +6,21 @@ import ContactBox from "../components/ContactBox/ContactBox";
 
 import { FaEnvelopeOpenText, FaPhone } from "react-icons/fa";
 const Contact = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => alert("thank-you"))
+      .catch((error) => alert(error));
+  };
+
   return (
     <section className="contact section_gap" id="contact">
       <div className="container">
@@ -16,8 +31,7 @@ const Contact = () => {
         />
         <div className="row justify-content-between">
           <div className="col-lg-6 col-12 order-lg-1 order-2">
-            <form className="contact__form" name="contact" method="POST" data-netlify={true}>
-              <input type="hidden" name="subject" value="contact" />
+            <form className="contact__form" name="contact__form" method="POST" data-netlify={true} onSubmit={handleSubmit}>
               <div className="row">
                 <div className="col-12">
                   <InputField fieldType={"input"} name={"name"} inputType={"text"} placeholder={"Eg. Arjun Jhukal"} label={"Name"} />
